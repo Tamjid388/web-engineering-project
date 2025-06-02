@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "title": "5 Best Workouts for Building Muscle Fast",
+    "author": "John Doe",
+    "date": "2025-05-15",
+    "summary": "Discover the most effective exercises to build muscle quickly and safely.",
+    "content": [
+      "Building muscle is both a science and an art. Consistency and the right workouts play a huge role in your progress.",
+      "Compound lifts like squats, deadlifts, and bench presses engage multiple muscle groups and are essential for fast gains.",
+      "Progressive overload—gradually increasing weight or repetitions—stimulates continual muscle growth.",
+      "Proper nutrition with enough protein and calories fuels muscle repair and growth.",
+      "Don't forget that muscles grow during rest, so ensure 7-9 hours of quality sleep and take rest days.",
+      "Combining these workouts with balanced nutrition and rest will set you on the path to rapid muscle building."
+    ],
+    "tags": ["workout", "muscle", "fitness"],
+    "image": "https://res.cloudinary.com/dv7clkufx/image/upload/v1748862531/workout_vcy1d8.jpg"
+  },
+  {
+    "id": 2,
+    "title": "How to Stay Motivated on Your Fitness Journey",
+    "author": "Jane Smith",
+    "date": "2025-04-28",
+    "summary": "Staying motivated can be tough. Here are some tips to keep your fitness goals on track.",
+    "content": [
+      "Fitness motivation can fluctuate, but having a clear plan helps maintain your focus.",
+      "Set small, achievable goals that build up to your bigger objectives.",
+      "Track your progress visually, whether with photos, apps, or journals.",
+      "Find a workout buddy to keep you accountable and make exercising more fun.",
+      "Mix up your routine regularly to avoid boredom and plateaus.",
+      "Reward yourself for milestones reached to celebrate your hard work.",
+      "Remember, fitness is a journey with ups and downs. Stay positive and be kind to yourself throughout."
+    ],
+    "tags": ["motivation", "mental health", "fitness"],
+    "image": "https://res.cloudinary.com/dv7clkufx/image/upload/v1748862209/cld-sample-3.jpg"
+  },
+  {
+    "id": 3,
+    "title": "The Ultimate Guide to Sportswear Fabrics",
+    "author": "Emily Clark",
+    "date": "2025-05-01",
+    "summary": "Learn about the different fabrics used in sportswear and which ones are best for your workouts.",
+    "content": [
+      "Choosing the right sportswear fabric can significantly improve your workout comfort and performance.",
+      "Polyester is durable, moisture-wicking, and quick-drying—ideal for most workouts.",
+      "Nylon offers softness, stretch, and abrasion resistance, perfect for leggings and compression wear.",
+      "Cotton is breathable and comfortable but tends to retain sweat, so it's less ideal for intense workouts.",
+      "Spandex (Lycra) provides excellent stretch and is often blended with other fabrics to enhance flexibility.",
+      "To keep your sportswear in top condition, wash it in cold water and avoid fabric softeners."
+    ],
+    "tags": ["sportswear", "fabric", "guide"],
+    "image": "https://res.cloudinary.com/dv7clkufx/image/upload/v1748862597/fabrics_kddean.jpg"
+  }
+]

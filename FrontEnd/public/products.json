@@ -11,7 +11,7 @@
     "rating": 4.6,
     "sizes": ["7", "8", "9", "10", "11"],
     "colors": ["black", "white", "blue"],
-    "image": "https://example.com/images/shoes1-main.jpg",
+    "image": "https://res.cloudinary.com/dv7clkufx/image/upload/v1748862209/cld-sample-5.jpg",
     "productDetails": {
       "images": [
         "https://example.com/images/shoes1-1.jpg",
@@ -70,7 +70,7 @@
     "rating": 4.4,
     "sizes": ["S", "M", "L", "XL", "XXL"],
     "colors": ["navy", "red", "gray"],
-    "image": "https://example.com/images/tshirt-main.jpg",
+    "image": "https://res.cloudinary.com/dv7clkufx/image/upload/v1748871740/trainingtShirt_mfcshf.jpg",
     "productDetails": {
       "images": [
         "https://example.com/images/tshirt1.jpg",
@@ -99,7 +99,7 @@
     "rating": 4.7,
     "sizes": ["M", "L", "XL"],
     "colors": ["black", "olive", "maroon"],
-    "image": "https://example.com/images/hoodie-main.jpg",
+    "image": "https://res.cloudinary.com/dv7clkufx/image/upload/v1748871835/Sports_Hoodie__uwkezc.jpg",
     "productDetails": {
       "images": [
         "https://example.com/images/hoodie1.jpg",
