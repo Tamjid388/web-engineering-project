@@ -1,0 +1,177 @@
+[
+  {
+    "id": "sw-001",
+    "name": "Men's Running Shoes",
+    "description": "Lightweight breathable shoes designed for long-distance running.",
+    "price": 75.00,
+    "discount": 10,
+    "category": "Shoes",
+    "brand": "Nike",
+    "stock": 30,
+    "rating": 4.6,
+    "sizes": ["7", "8", "9", "10", "11"],
+    "colors": ["black", "white", "blue"],
+    "image": "https://example.com/images/shoes1-main.jpg",
+    "productDetails": {
+      "images": [
+        "https://example.com/images/shoes1-1.jpg",
+        "https://example.com/images/shoes1-2.jpg"
+      ],
+      "deliveryInfo": {
+        "freeShipping": true,
+        "estimatedDelivery": "3-5 business days",
+        "returnPolicy": "30-day return window"
+      },
+      "reviews": [
+        { "user": "JohnDoe21", "rating": 5, "comment": "Extremely comfortable!" },
+        { "user": "RunnerGirl", "rating": 4, "comment": "Runs a bit tight." }
+      ]
+    },
+    "tags": ["running", "men", "shoes", "lightweight"]
+  },
+  {
+    "id": "sw-002",
+    "name": "Women's Yoga Pants",
+    "description": "High-waisted stretchable yoga pants perfect for workouts and daily wear.",
+    "price": 42.99,
+    "discount": 15,
+    "category": "Bottoms",
+    "brand": "Adidas",
+    "stock": 50,
+    "rating": 4.8,
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["black", "gray", "purple"],
+    "image": "https://example.com/images/yoga-pants-main.jpg",
+    "productDetails": {
+      "images": [
+        "https://example.com/images/yoga-pants1.jpg",
+        "https://example.com/images/yoga-pants2.jpg"
+      ],
+      "deliveryInfo": {
+        "freeShipping": false,
+        "estimatedDelivery": "5-7 business days",
+        "returnPolicy": "15-day return policy"
+      },
+      "reviews": [
+        { "user": "FitQueen", "rating": 5, "comment": "Great fit and flexibility!" }
+      ]
+    },
+    "tags": ["yoga", "women", "pants", "fitness"]
+  },
+  {
+    "id": "sw-003",
+    "name": "Unisex Training T-Shirt",
+    "description": "Sweat-wicking T-shirt suitable for all kinds of training sessions.",
+    "price": 29.99,
+    "discount": 5,
+    "category": "Tops",
+    "brand": "Puma",
+    "stock": 70,
+    "rating": 4.4,
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "colors": ["navy", "red", "gray"],
+    "image": "https://example.com/images/tshirt-main.jpg",
+    "productDetails": {
+      "images": [
+        "https://example.com/images/tshirt1.jpg",
+        "https://example.com/images/tshirt2.jpg"
+      ],
+      "deliveryInfo": {
+        "freeShipping": true,
+        "estimatedDelivery": "2-4 business days",
+        "returnPolicy": "20-day return policy"
+      },
+      "reviews": [
+        { "user": "GymGuy", "rating": 4, "comment": "Very comfortable and breathable." }
+      ]
+    },
+    "tags": ["tshirt", "training", "unisex", "dryfit"]
+  },
+  {
+    "id": "sw-004",
+    "name": "Sports Hoodie",
+    "description": "Comfortable hoodie with moisture-wicking fabric and thermal lining.",
+    "price": 59.00,
+    "discount": 20,
+    "category": "Outerwear",
+    "brand": "Under Armour",
+    "stock": 40,
+    "rating": 4.7,
+    "sizes": ["M", "L", "XL"],
+    "colors": ["black", "olive", "maroon"],
+    "image": "https://example.com/images/hoodie-main.jpg",
+    "productDetails": {
+      "images": [
+        "https://example.com/images/hoodie1.jpg",
+        "https://example.com/images/hoodie2.jpg"
+      ],
+      "deliveryInfo": {
+        "freeShipping": true,
+        "estimatedDelivery": "3-6 business days",
+        "returnPolicy": "30-day return policy"
+      },
+      "reviews": [
+        { "user": "ChillMode", "rating": 5, "comment": "Warm and stylish!" }
+      ]
+    },
+    "tags": ["hoodie", "sportswear", "thermal", "winter"]
+  },
+  {
+    "id": "sw-005",
+    "name": "Compression Arm Sleeves",
+    "description": "Elastic arm sleeves for support during workouts or outdoor sports.",
+    "price": 19.99,
+    "discount": 0,
+    "category": "Accessories",
+    "brand": "Reebok",
+    "stock": 100,
+    "rating": 4.2,
+    "sizes": ["M", "L"],
+    "colors": ["black", "white"],
+    "image": "https://example.com/images/armsleeve-main.jpg",
+    "productDetails": {
+      "images": [
+        "https://example.com/images/armsleeve1.jpg",
+        "https://example.com/images/armsleeve2.jpg"
+      ],
+      "deliveryInfo": {
+        "freeShipping": false,
+        "estimatedDelivery": "5-8 business days",
+        "returnPolicy": "10-day return policy"
+      },
+      "reviews": [
+        { "user": "SportyAlex", "rating": 4, "comment": "Good compression, helps with soreness." }
+      ]
+    },
+    "tags": ["compression", "accessories", "arm", "sleeves"]
+  },
+  {
+    "id": "sw-006",
+    "name": "Men's Basketball Shorts",
+    "description": "Loose fit shorts with mesh panels for ventilation and comfort.",
+    "price": 34.50,
+    "discount": 10,
+    "category": "Bottoms",
+    "brand": "Jordan",
+    "stock": 60,
+    "rating": 4.5,
+    "sizes": ["M", "L", "XL"],
+    "colors": ["black", "white", "red"],
+    "image": "https://example.com/images/basketball-shorts-main.jpg",
+    "productDetails": {
+      "images": [
+        "https://example.com/images/basketball-shorts1.jpg",
+        "https://example.com/images/basketball-shorts2.jpg"
+      ],
+      "deliveryInfo": {
+        "freeShipping": true,
+        "estimatedDelivery": "4-6 business days",
+        "returnPolicy": "20-day return policy"
+      },
+      "reviews": [
+        { "user": "BallinBenny", "rating": 5, "comment": "Best shorts for pickup games!" }
+      ]
+    },
+    "tags": ["shorts", "basketball", "men", "mesh"]
+  }
+]
