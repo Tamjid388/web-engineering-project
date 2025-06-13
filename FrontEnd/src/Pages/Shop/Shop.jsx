@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Products } from './Products'
 import axios from 'axios';
+import { Filter } from '../../Components/Shop/Filter';
 
 export const Shop = () => {
      const [products,setProducts]=useState([])
@@ -18,7 +19,10 @@ export const Shop = () => {
   }, []);
 
   return (
-    <div className=''>
+    <div className='border'>
+      <div>
+      <Filter products={products}/>
+      </div>
         <Products products={products}/>
     </div>
   )

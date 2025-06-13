@@ -11,7 +11,7 @@
     "rating": 4.6,
     "sizes": ["7", "8", "9", "10", "11"],
     "colors": ["black", "white", "blue"],
-    "image": "https://res.cloudinary.com/dv7clkufx/image/upload/v1748862209/cld-sample-5.jpg",
+    "image": "https://nov-random-3.myshopify.com/cdn/shop/products/1_e0dd2ab4-9e90-4a9c-8256-839418377dc7_1120x.png?v=1629363074",
     "productDetails": {
       "images": [
         "https://example.com/images/shoes1-1.jpg",
@@ -41,7 +41,7 @@
     "rating": 4.8,
     "sizes": ["S", "M", "L", "XL"],
     "colors": ["black", "gray", "purple"],
-    "image": "https://example.com/images/yoga-pants-main.jpg",
+    "image": "https://res.cloudinary.com/dv7clkufx/image/upload/v1748872592/Adicolor_Classics_SST_Track_Jacket__kms6fc.jpg",
     "productDetails": {
       "images": [
         "https://example.com/images/yoga-pants1.jpg",
@@ -99,7 +99,7 @@
     "rating": 4.7,
     "sizes": ["M", "L", "XL"],
     "colors": ["black", "olive", "maroon"],
-    "image": "https://res.cloudinary.com/dv7clkufx/image/upload/v1748871835/Sports_Hoodie__uwkezc.jpg",
+    "image": "https://nov-random-3.myshopify.com/cdn/shop/products/1_f18e2e69-0538-4947-bf6d-205dfa37ab74_1120x.png?v=1631163100",
     "productDetails": {
       "images": [
         "https://example.com/images/hoodie1.jpg",
@@ -128,7 +128,7 @@
     "rating": 4.2,
     "sizes": ["M", "L"],
     "colors": ["black", "white"],
-    "image": "https://example.com/images/armsleeve-main.jpg",
+    "image": "https://res.cloudinary.com/dv7clkufx/image/upload/v1748872441/armsSleeves_yahrkf.jpg",
     "productDetails": {
       "images": [
         "https://example.com/images/armsleeve1.jpg",
@@ -157,7 +157,7 @@
     "rating": 4.5,
     "sizes": ["M", "L", "XL"],
     "colors": ["black", "white", "red"],
-    "image": "https://example.com/images/basketball-shorts-main.jpg",
+    "image": "https://res.cloudinary.com/dv7clkufx/image/upload/v1748872006/shorts_hd3bzh.jpg",
     "productDetails": {
       "images": [
         "https://example.com/images/basketball-shorts1.jpg",
@@ -174,4 +174,68 @@
     },
     "tags": ["shorts", "basketball", "men", "mesh"]
   }
+  ,
+  {
+    "id": "sw-007",
+    "name": "Men's Basketball Shorts",
+    "description": "Loose fit shorts with mesh panels for ventilation and comfort.",
+    "price": 34.50,
+    "discount": 10,
+    "category": "Bottoms",
+    "brand": "Jordan",
+    "stock": 60,
+    "rating": 4.5,
+    "sizes": ["M", "L", "XL"],
+    "colors": ["black", "white", "red"],
+    "image": "https://hexo-demo.myshopify.com/cdn/shop/files/Active_wear_06_360x.png?v=1731488973",
+    "productDetails": {
+      "images": [
+        "https://example.com/images/basketball-shorts1.jpg",
+        "https://example.com/images/basketball-shorts2.jpg"
+      ],
+      "deliveryInfo": {
+        "freeShipping": true,
+        "estimatedDelivery": "4-6 business days",
+        "returnPolicy": "20-day return policy"
+      },
+      "reviews": [
+        { "user": "BallinBenny", "rating": 5, "comment": "Best shorts for pickup games!" }
+      ]
+    },
+    "tags": ["shorts", "basketball", "men", "mesh"]
+  },
+  {
+  "id": "sw-008",
+  "name": "Stripes Rain.RDY Jacket",
+  "description": "Water-repellent women's jacket with breathable fabric and stylish stripe design.",
+  "price": 89.99,
+  "discount": 15,
+  "category": "Outerwear",
+  "brand": "Adidas",
+  "stock": 40,
+  "rating": 4.7,
+  "sizes": ["S", "M", "L", "XL"],
+  "colors": ["navy", "gray", "white"],
+  "image": "https://nov-random-3.myshopify.com/cdn/shop/products/1_87a11ded-8a8b-4544-96b4-2ea36ea11d6a_1120x.png?v=1629367883",
+  "productDetails": {
+    "images": [
+      "https://example.com/images/rain-jacket1.jpg",
+      "https://example.com/images/rain-jacket2.jpg"
+    ],
+    "deliveryInfo": {
+      "freeShipping": true,
+      "estimatedDelivery": "3-5 business days",
+      "returnPolicy": "30-day return policy"
+    },
+    "reviews": [
+      {
+        "user": "RainRunner",
+        "rating": 5,
+        "comment": "Perfect for wet weather. Looks good and keeps me dry!"
+      }
+    ]
+  },
+  "tags": ["jacket", "rainwear", "women", "outerwear", "waterproof"]
+}
+
 ]
