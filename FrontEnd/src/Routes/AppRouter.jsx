@@ -6,6 +6,7 @@ import { Shop } from '../Pages/Shop/Shop'
 import { Demo } from '../Components/Demo/Demo'
 import { Login } from '../Auth/Login'
 import { Register } from '../Auth/Register'
+import { ProductDetails } from '../Pages/ProductDetail/ProductDetails'
 
 
 
@@ -23,6 +24,9 @@ const AppRouter = createBrowserRouter([
          {
             path:'/shop',
             element:<Shop/>
+        },{
+          path:"/shop/product-details/:id",
+          element:<ProductDetails/>
         },
          {
             path:'/demo',
