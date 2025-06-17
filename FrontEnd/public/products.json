@@ -30,34 +30,35 @@
     "tags": ["running", "men", "shoes", "lightweight"]
   },
   {
-    "id": "sw-002",
-    "name": "Women's Yoga Pants",
-    "description": "High-waisted stretchable yoga pants perfect for workouts and daily wear.",
-    "price": 42.99,
-    "discount": 15,
-    "category": "Clothing",
-    "brand": "Adidas",
-    "stock": 50,
-    "rating": 4.8,
-    "sizes": ["S", "M", "L", "XL"],
-    "colors": ["black", "gray", "purple"],
-    "image": "https://res.cloudinary.com/dv7clkufx/image/upload/v1748872592/Adicolor_Classics_SST_Track_Jacket__kms6fc.jpg",
-    "productDetails": {
-      "images": [
-        "https://example.com/images/yoga-pants1.jpg",
-        "https://example.com/images/yoga-pants2.jpg"
-      ],
-      "deliveryInfo": {
-        "freeShipping": false,
-        "estimatedDelivery": "5-7 business days",
-        "returnPolicy": "15-day return policy"
-      },
-      "reviews": [
-        { "user": "FitQueen", "rating": 5, "comment": "Great fit and flexibility!" }
-      ]
+  "id": "sw-003",
+  "name": "Men's Black Running Jacket",
+  "description": "Lightweight, breathable, and water-resistant jacket designed for optimal running performance in all weather.",
+  "price": 69.99,
+  "discount": 10,
+  "category": "Clothing",
+  "brand": "Nike",
+  "stock": 40,
+  "rating": 4.6,
+  "sizes": ["M", "L", "XL", "XXL"],
+  "colors": ["black"],
+  "image": "https://dunker.qodeinteractive.com/wp-content/uploads/2022/12/shop-list-sidebar-35.jpg",
+  "productDetails": {
+    "images": [
+      "https://example.com/images/running-jacket1.jpg",
+      "https://example.com/images/running-jacket2.jpg"
+    ],
+    "deliveryInfo": {
+      "freeShipping": true,
+      "estimatedDelivery": "3-5 business days",
+      "returnPolicy": "30-day return policy"
     },
-    "tags": ["yoga", "women", "pants", "fitness"]
+    "reviews": [
+      { "user": "RunnerPro", "rating": 5, "comment": "Perfect for early morning jogs!" }
+    ]
   },
+  "tags": ["running", "jacket", "men", "black"]
+}
+,
   {
     "id": "sw-003",
     "name": "Unisex Training T-Shirt",
@@ -70,7 +71,7 @@
     "rating": 4.4,
     "sizes": ["S", "M", "L", "XL", "XXL"],
     "colors": ["navy", "red", "gray"],
-    "image": "https://res.cloudinary.com/dv7clkufx/image/upload/v1748871740/trainingtShirt_mfcshf.jpg",
+    "image": "https://res.cloudinary.com/dv7clkufx/image/upload/v1750148457/whiteTshirts_seyw02.jpg",
     "productDetails": {
       "images": [
         "https://example.com/images/tshirt1.jpg",
@@ -157,7 +158,7 @@
     "rating": 4.5,
     "sizes": ["M", "L", "XL"],
     "colors": ["black", "white", "red"],
-    "image": "https://res.cloudinary.com/dv7clkufx/image/upload/v1748872006/shorts_hd3bzh.jpg",
+    "image": "https://dunker.qodeinteractive.com/wp-content/uploads/2022/12/shop-list-sidebar-54.jpg",
     "productDetails": {
       "images": [
         "https://example.com/images/basketball-shorts1.jpg",
@@ -215,7 +216,7 @@
     "rating": 4.7,
     "sizes": ["S", "M", "L", "XL"],
     "colors": ["navy", "gray", "white"],
-    "image": "https://nov-random-3.myshopify.com/cdn/shop/products/1_87a11ded-8a8b-4544-96b4-2ea36ea11d6a_1120x.png?v=1629367883",
+    "image": "https://dunker.qodeinteractive.com/wp-content/uploads/2022/12/grouped-product-photo-3-600x750.jpg",
     "productDetails": {
       "images": [
         "https://example.com/images/rain-jacket1.jpg",
@@ -433,7 +434,67 @@
     ]
   },
   "tags": ["belt bag", "shoulder bag", "black", "puma", "gear"]
+},
+{
+  "id": "sw-015",
+  "name": "Men's Red Sport Shirt",
+  "description": "Breathable and sweat-wicking red sport shirt ideal for intense workouts and outdoor activities.",
+  "price": 34.99,
+  "discount": 20,
+  "category": "Clothing",
+  "brand": "Puma",
+  "stock": 60,
+  "rating": 4.7,
+  "sizes": ["S", "M", "L", "XL"],
+  "colors": ["red"],
+  "image": "https://dunker.qodeinteractive.com/wp-content/uploads/2022/12/shop-single-3.jpg",
+  "productDetails": {
+    "images": [
+      "https://example.com/images/red-sport-shirt1.jpg",
+      "https://example.com/images/red-sport-shirt2.jpg"
+    ],
+    "deliveryInfo": {
+      "freeShipping": false,
+      "estimatedDelivery": "4-6 business days",
+      "returnPolicy": "15-day return policy"
+    },
+    "reviews": [
+      { "user": "GymFreak", "rating": 4.5, "comment": "Comfortable and looks great!" }
+    ]
+  },
+  "tags": ["sport", "shirt", "men", "red"]
+},
+{
+  "id": "sw-016",
+  "name": "Women's Full-Zip Hoodie",
+  "description": "Cozy and stylish full-zip hoodie perfect for casual wear, workouts, or layering on chilly days.",
+  "price": 59.99,
+  "discount": 10,
+  "category": "Clothing",
+  "brand": "Under Armour",
+  "stock": 45,
+  "rating": 4.9,
+  "sizes": ["S", "M", "L", "XL"],
+  "colors": ["black", "grey", "navy"],
+  "image": "https://wpbingo-azeno.myshopify.com/cdn/shop/files/Women_s-Jacket-Down-Fill-1_1080x1080.jpg?v=1722313217",
+  "productDetails": {
+    "images": [
+      "https://example.com/images/full-zip-hoodie1.jpg",
+      "https://example.com/images/full-zip-hoodie2.jpg"
+    ],
+    "deliveryInfo": {
+      "freeShipping": true,
+      "estimatedDelivery": "3-6 business days",
+      "returnPolicy": "30-day return policy"
+    },
+    "reviews": [
+      { "user": "ChillStyle", "rating": 5, "comment": "Super comfortable and warm!" }
+    ]
+  },
+  "tags": ["hoodie", "women", "full zip", "casual", "warm"]
 }
+
+
 
 
 ]
