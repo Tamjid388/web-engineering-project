@@ -5,7 +5,7 @@
     "description": "Lightweight breathable shoes designed for long-distance running.",
     "price": 75.00,
     "discount": 10,
-    "category": "Shoes",
+    "category": "Footwear",
     "brand": "Nike",
     "stock": 30,
     "rating": 4.6,
@@ -30,47 +30,48 @@
     "tags": ["running", "men", "shoes", "lightweight"]
   },
   {
-    "id": "sw-002",
-    "name": "Women's Yoga Pants",
-    "description": "High-waisted stretchable yoga pants perfect for workouts and daily wear.",
-    "price": 42.99,
-    "discount": 15,
-    "category": "Bottoms",
-    "brand": "Adidas",
-    "stock": 50,
-    "rating": 4.8,
-    "sizes": ["S", "M", "L", "XL"],
-    "colors": ["black", "gray", "purple"],
-    "image": "https://res.cloudinary.com/dv7clkufx/image/upload/v1748872592/Adicolor_Classics_SST_Track_Jacket__kms6fc.jpg",
-    "productDetails": {
-      "images": [
-        "https://example.com/images/yoga-pants1.jpg",
-        "https://example.com/images/yoga-pants2.jpg"
-      ],
-      "deliveryInfo": {
-        "freeShipping": false,
-        "estimatedDelivery": "5-7 business days",
-        "returnPolicy": "15-day return policy"
-      },
-      "reviews": [
-        { "user": "FitQueen", "rating": 5, "comment": "Great fit and flexibility!" }
-      ]
+  "id": "sw-003",
+  "name": "Men's Black Running Jacket",
+  "description": "Lightweight, breathable, and water-resistant jacket designed for optimal running performance in all weather.",
+  "price": 69.99,
+  "discount": 10,
+  "category": "Clothing",
+  "brand": "Nike",
+  "stock": 40,
+  "rating": 4.6,
+  "sizes": ["M", "L", "XL", "XXL"],
+  "colors": ["black"],
+  "image": "https://dunker.qodeinteractive.com/wp-content/uploads/2022/12/shop-list-sidebar-35.jpg",
+  "productDetails": {
+    "images": [
+      "https://example.com/images/running-jacket1.jpg",
+      "https://example.com/images/running-jacket2.jpg"
+    ],
+    "deliveryInfo": {
+      "freeShipping": true,
+      "estimatedDelivery": "3-5 business days",
+      "returnPolicy": "30-day return policy"
     },
-    "tags": ["yoga", "women", "pants", "fitness"]
+    "reviews": [
+      { "user": "RunnerPro", "rating": 5, "comment": "Perfect for early morning jogs!" }
+    ]
   },
+  "tags": ["running", "jacket", "men", "black"]
+}
+,
   {
     "id": "sw-003",
     "name": "Unisex Training T-Shirt",
     "description": "Sweat-wicking T-shirt suitable for all kinds of training sessions.",
     "price": 29.99,
     "discount": 5,
-    "category": "Tops",
+    "category": "Clothing",
     "brand": "Puma",
     "stock": 70,
     "rating": 4.4,
     "sizes": ["S", "M", "L", "XL", "XXL"],
     "colors": ["navy", "red", "gray"],
-    "image": "https://res.cloudinary.com/dv7clkufx/image/upload/v1748871740/trainingtShirt_mfcshf.jpg",
+    "image": "https://res.cloudinary.com/dv7clkufx/image/upload/v1750148457/whiteTshirts_seyw02.jpg",
     "productDetails": {
       "images": [
         "https://example.com/images/tshirt1.jpg",
@@ -93,7 +94,7 @@
     "description": "Comfortable hoodie with moisture-wicking fabric and thermal lining.",
     "price": 59.00,
     "discount": 20,
-    "category": "Outerwear",
+    "category": "Clothing",
     "brand": "Under Armour",
     "stock": 40,
     "rating": 4.7,
@@ -151,13 +152,13 @@
     "description": "Loose fit shorts with mesh panels for ventilation and comfort.",
     "price": 34.50,
     "discount": 10,
-    "category": "Bottoms",
+    "category": "Clothing",
     "brand": "Jordan",
     "stock": 60,
     "rating": 4.5,
     "sizes": ["M", "L", "XL"],
     "colors": ["black", "white", "red"],
-    "image": "https://res.cloudinary.com/dv7clkufx/image/upload/v1748872006/shorts_hd3bzh.jpg",
+    "image": "https://dunker.qodeinteractive.com/wp-content/uploads/2022/12/shop-list-sidebar-54.jpg",
     "productDetails": {
       "images": [
         "https://example.com/images/basketball-shorts1.jpg",
@@ -173,15 +174,14 @@
       ]
     },
     "tags": ["shorts", "basketball", "men", "mesh"]
-  }
-  ,
+  },
   {
     "id": "sw-007",
     "name": "Men's Basketball Shorts",
     "description": "Loose fit shorts with mesh panels for ventilation and comfort.",
     "price": 34.50,
     "discount": 10,
-    "category": "Bottoms",
+    "category": "Clothing",
     "brand": "Jordan",
     "stock": 60,
     "rating": 4.5,
@@ -205,22 +205,187 @@
     "tags": ["shorts", "basketball", "men", "mesh"]
   },
   {
-  "id": "sw-008",
-  "name": "Stripes Rain.RDY Jacket",
-  "description": "Water-repellent women's jacket with breathable fabric and stylish stripe design.",
-  "price": 89.99,
-  "discount": 15,
-  "category": "Outerwear",
-  "brand": "Adidas",
-  "stock": 40,
-  "rating": 4.7,
-  "sizes": ["S", "M", "L", "XL"],
-  "colors": ["navy", "gray", "white"],
-  "image": "https://nov-random-3.myshopify.com/cdn/shop/products/1_87a11ded-8a8b-4544-96b4-2ea36ea11d6a_1120x.png?v=1629367883",
+    "id": "sw-008",
+    "name": "Stripes Rain.RDY Jacket",
+    "description": "Water-repellent women's jacket with breathable fabric and stylish stripe design.",
+    "price": 89.99,
+    "discount": 15,
+    "category": "Clothing",
+    "brand": "Adidas",
+    "stock": 40,
+    "rating": 4.7,
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["navy", "gray", "white"],
+    "image": "https://dunker.qodeinteractive.com/wp-content/uploads/2022/12/grouped-product-photo-3-600x750.jpg",
+    "productDetails": {
+      "images": [
+        "https://example.com/images/rain-jacket1.jpg",
+        "https://example.com/images/rain-jacket2.jpg"
+      ],
+      "deliveryInfo": {
+        "freeShipping": true,
+        "estimatedDelivery": "3-5 business days",
+        "returnPolicy": "30-day return policy"
+      },
+      "reviews": [
+        {
+          "user": "RainRunner",
+          "rating": 5,
+          "comment": "Perfect for wet weather. Looks good and keeps me dry!"
+        }
+      ]
+    },
+    "tags": ["jacket", "rainwear", "women", "outerwear", "waterproof"]
+  },
+  {
+    "id": "sw-009",
+    "name": "Ultraboost 21",
+    "description": "High-performance running shoes with responsive Boost cushioning and sock-like fit.",
+    "price": 180.00,
+    "discount": 20,
+    "category": "Footwear",
+    "brand": "Adidas",
+    "stock": 25,
+    "rating": 4.8,
+    "sizes": ["7", "8", "9", "10", "11", "12"],
+    "colors": ["black", "white", "solar yellow"],
+    "image": "https://res.cloudinary.com/dv7clkufx/image/upload/v1750086223/shoe1_zdfmar.webp",
+    "productDetails": {
+      "images": [
+        "https://example.com/images/ultraboost21-1.jpg",
+        "https://example.com/images/ultraboost21-2.jpg"
+      ],
+      "deliveryInfo": {
+        "freeShipping": true,
+        "estimatedDelivery": "3-5 business days",
+        "returnPolicy": "30-day return policy"
+      },
+      "reviews": [
+        {
+          "user": "MarathonMike",
+          "rating": 5,
+          "comment": "These are the most responsive shoes I've owned!"
+        }
+      ]
+    },
+    "tags": ["running", "shoes", "adidas", "ultraboost"]
+  },
+  {
+    "id": "sw-010",
+    "name": "Adidas Samba",
+    "description": "Classic indoor soccer shoes turned casual with sleek leather upper.",
+    "price": 100.00,
+    "discount": 10,
+    "category": "Footwear",
+    "brand": "Adidas",
+    "stock": 35,
+    "rating": 4.6,
+    "sizes": ["6", "7", "8", "9", "10", "11"],
+    "colors": ["black", "white", "gum"],
+    "image": "https://res.cloudinary.com/dv7clkufx/image/upload/v1750086222/shoe2_jhro6g.webp",
+    "productDetails": {
+      "images": [
+        "https://example.com/images/samba-1.jpg",
+        "https://example.com/images/samba-2.jpg"
+      ],
+      "deliveryInfo": {
+        "freeShipping": true,
+        "estimatedDelivery": "2-4 business days",
+        "returnPolicy": "30-day return policy"
+      },
+      "reviews": [
+        {
+          "user": "StyleSeeker",
+          "rating": 5,
+          "comment": "Timeless design and fits perfectly!"
+        }
+      ]
+    },
+    "tags": ["casual", "shoes", "leather", "samba", "adidas"]
+  },
+  {
+    "id": "sw-011",
+    "name": "Ultraboost Running",
+    "description": "Responsive and stylish running shoes with superior grip and support.",
+    "price": 160.00,
+    "discount": 15,
+    "category": "Footwear",
+    "brand": "Adidas",
+    "stock": 20,
+    "rating": 4.7,
+    "sizes": ["7", "8", "9", "10", "11", "12"],
+    "colors": ["gray", "navy", "white"],
+    "image": "https://res.cloudinary.com/dv7clkufx/image/upload/v1750086223/shoe3_fymkff.webp",
+    "productDetails": {
+      "images": [
+        "https://example.com/images/ultraboost-running1.jpg",
+        "https://example.com/images/ultraboost-running2.jpg"
+      ],
+      "deliveryInfo": {
+        "freeShipping": true,
+        "estimatedDelivery": "3-6 business days",
+        "returnPolicy": "30-day return policy"
+      },
+      "reviews": [
+        {
+          "user": "TrackMaster",
+          "rating": 5,
+          "comment": "Supportive and light — perfect for long runs!"
+        }
+      ]
+    },
+    "tags": ["running", "adidas", "ultraboost", "performance", "shoes"]
+  },
+  {
+  "id": "sw-012",
+  "name": "Urban Gray Backpack",
+  "description": "Durable and spacious gray backpack designed for sports and daily use.",
+  "price": 85.00,
+  "discount": 10,
+  "category": "Gear & Equipment",
+  "brand": "Nike",
+  "stock": 15,
+  "rating": 4.5,
+  "sizes": [],
+  "colors": ["gray"],
+  "image": "https://res.cloudinary.com/dv7clkufx/image/upload/v1750100081/grayBagpack_hj7okz.jpg",
   "productDetails": {
     "images": [
-      "https://example.com/images/rain-jacket1.jpg",
-      "https://example.com/images/rain-jacket2.jpg"
+      "https://example.com/images/urban-gray-backpack1.jpg",
+      "https://example.com/images/urban-gray-backpack2.jpg"
+    ],
+    "deliveryInfo": {
+      "freeShipping": true,
+      "estimatedDelivery": "4-7 business days",
+      "returnPolicy": "30-day return policy"
+    },
+    "reviews": [
+      {
+        "user": "PackPro",
+        "rating": 4,
+        "comment": "Perfect for gym and daily commutes, very comfortable."
+      }
+    ]
+  },
+  "tags": ["backpack", "gray", "nike", "sports", "gear"]
+},
+{
+  "id": "sw-013",
+  "name": "Blue Rucksack Backpack",
+  "description": "Stylish blue rucksack backpack with multiple compartments for organized storage.",
+  "price": 95.00,
+  "discount": 12,
+  "category": "Gear & Equipment",
+  "brand": "Under Armour",
+  "stock": 10,
+  "rating": 4.6,
+  "sizes": [],
+  "colors": ["blue"],
+  "image": "https://res.cloudinary.com/dv7clkufx/image/upload/v1750100078/blue_bag_ty6pjm.jpg",
+  "productDetails": {
+    "images": [
+      "https://example.com/images/blue-rucksack-backpack1.jpg",
+      "https://example.com/images/blue-rucksack-backpack2.jpg"
     ],
     "deliveryInfo": {
       "freeShipping": true,
@@ -229,13 +394,107 @@
     },
     "reviews": [
       {
-        "user": "RainRunner",
+        "user": "TravelGuru",
         "rating": 5,
-        "comment": "Perfect for wet weather. Looks good and keeps me dry!"
+        "comment": "Great for outdoor sports and travel, very durable."
       }
     ]
   },
-  "tags": ["jacket", "rainwear", "women", "outerwear", "waterproof"]
+  "tags": ["rucksack", "backpack", "blue", "under armour", "gear"]
+},
+{
+  "id": "sw-014",
+  "name": "Compact Black Belt Bag",
+  "description": "Sleek and compact black belt bag perfect for carrying essentials hands-free during workouts or casual outings.",
+  "price": 45.00,
+  "discount": 8,
+  "category": "Gear & Equipment",
+  "brand": "Puma",
+  "stock": 25,
+  "rating": 4.4,
+  "sizes": [],
+  "colors": ["black"],
+  "image": "https://res.cloudinary.com/dv7clkufx/image/upload/v1750100266/beltBag_zz9hdg.jpg",
+  "productDetails": {
+    "images": [
+      "https://example.com/images/black-belt-bag1.jpg",
+      "https://example.com/images/black-belt-bag2.jpg"
+    ],
+    "deliveryInfo": {
+      "freeShipping": true,
+      "estimatedDelivery": "2-5 business days",
+      "returnPolicy": "30-day return policy"
+    },
+    "reviews": [
+      {
+        "user": "ActiveRunner",
+        "rating": 5,
+        "comment": "Very convenient and stylish. Fits all my essentials!"
+      }
+    ]
+  },
+  "tags": ["belt bag", "shoulder bag", "black", "puma", "gear"]
+},
+{
+  "id": "sw-015",
+  "name": "Men's Red Sport Shirt",
+  "description": "Breathable and sweat-wicking red sport shirt ideal for intense workouts and outdoor activities.",
+  "price": 34.99,
+  "discount": 20,
+  "category": "Clothing",
+  "brand": "Puma",
+  "stock": 60,
+  "rating": 4.7,
+  "sizes": ["S", "M", "L", "XL"],
+  "colors": ["red"],
+  "image": "https://dunker.qodeinteractive.com/wp-content/uploads/2022/12/shop-single-3.jpg",
+  "productDetails": {
+    "images": [
+      "https://example.com/images/red-sport-shirt1.jpg",
+      "https://example.com/images/red-sport-shirt2.jpg"
+    ],
+    "deliveryInfo": {
+      "freeShipping": false,
+      "estimatedDelivery": "4-6 business days",
+      "returnPolicy": "15-day return policy"
+    },
+    "reviews": [
+      { "user": "GymFreak", "rating": 4.5, "comment": "Comfortable and looks great!" }
+    ]
+  },
+  "tags": ["sport", "shirt", "men", "red"]
+},
+{
+  "id": "sw-016",
+  "name": "Women's Full-Zip Hoodie",
+  "description": "Cozy and stylish full-zip hoodie perfect for casual wear, workouts, or layering on chilly days.",
+  "price": 59.99,
+  "discount": 10,
+  "category": "Clothing",
+  "brand": "Under Armour",
+  "stock": 45,
+  "rating": 4.9,
+  "sizes": ["S", "M", "L", "XL"],
+  "colors": ["black", "grey", "navy"],
+  "image": "https://wpbingo-azeno.myshopify.com/cdn/shop/files/Women_s-Jacket-Down-Fill-1_1080x1080.jpg?v=1722313217",
+  "productDetails": {
+    "images": [
+      "https://example.com/images/full-zip-hoodie1.jpg",
+      "https://example.com/images/full-zip-hoodie2.jpg"
+    ],
+    "deliveryInfo": {
+      "freeShipping": true,
+      "estimatedDelivery": "3-6 business days",
+      "returnPolicy": "30-day return policy"
+    },
+    "reviews": [
+      { "user": "ChillStyle", "rating": 5, "comment": "Super comfortable and warm!" }
+    ]
+  },
+  "tags": ["hoodie", "women", "full zip", "casual", "warm"]
 }
+
+
+
 
 ]
