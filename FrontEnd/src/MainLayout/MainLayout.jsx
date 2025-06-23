@@ -8,7 +8,7 @@ export const MainLayout = () => {
     <div>
         <Navbar/>
 
-        <div className='container mx-auto'>
+        <div className='container mx-auto p-2'>
             <Outlet/>
         </div>
 
