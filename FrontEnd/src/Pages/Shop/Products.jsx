@@ -9,7 +9,7 @@ export const Products = ({products}) => {
         className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 
          ' >
           {  products?.map(product=>
-          <div key={product.id} className="card bg-base-100   shadow-sm  group rounded-none border border-gray-300 hover:border-black">
+          <Link to={`product-details/${product.id}`} key={product.id} className="card bg-base-100   shadow-sm  group rounded-none border border-gray-300 hover:border-black">
   <figure className='h-[350px] relative border border-gray-100  overflow-hidden'>
     <img className='h-full w-full object-cover'
       src={product.image}
@@ -35,7 +35,7 @@ export const Products = ({products}) => {
       className="btn bg-black text-white">Buy Now</Link>
     </div>
   </div>
-</div>)}
+</Link>)}
 
         </div>
 
