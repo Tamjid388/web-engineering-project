@@ -82,7 +82,7 @@ export const ProductDetails = () => {
 
         </div>
       </div>
-      <DeliveryPolicy/>
+      <DeliveryPolicy product={product}/>
 
 
 

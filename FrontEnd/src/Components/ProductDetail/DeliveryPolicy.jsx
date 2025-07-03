@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export const DeliveryPolicy = () => {
+export const DeliveryPolicy = ({product}) => {
   const [activeTab, setActiveTab] = useState("description");
 
   // Handle tab switching
