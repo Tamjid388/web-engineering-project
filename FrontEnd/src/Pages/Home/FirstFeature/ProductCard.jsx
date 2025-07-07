@@ -5,19 +5,19 @@ import { Heart, ShoppingBag } from "lucide-react";
 const ProductCard = ({ product }) => {
   return (
     <div className="border border-gray-300 hover:border-black p-4 hover:shadow-lg transition relative group overflow-hidden">
-      {/* Wishlist Icon */}
+    
       <div className="absolute top-4 right-4 cursor-pointer">
         <Heart size={20} className="text-gray-600 hover:text-red-500" />
       </div>
 
-      {/* Version Badge (optional custom tag) */}
+     
       {product.version && (
         <div className="absolute top-4 left-4 bg-black text-white text-xs px-2 py-0.5 rounded-sm">
           {product.version}
         </div>
       )}
 
-      {/* NEW Badge */}
+     
       {product.isNew && (
         <span className="absolute top-4 left-4 bg-black text-white text-xs px-2 py-1 rounded">
           NEW

@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import img from "../../../assets/6_cc9e926f-60c0-4686-b487-7035dbce10e8_480x480-removebg-preview.PNG"
 
 const FeatureFour = () => {
@@ -27,9 +28,11 @@ const FeatureFour = () => {
             esue eget masa ac urna finibus fringilla nonpon mauris sit amet nisl
             in nunc pharetra.
           </p>
+         <Link to={'/shop'}>
           <button className="border border-black text-black px-6 py-3 font-semibold hover:bg-black hover:text-white transition">
             Shop Now
           </button>
+         </Link>
         </div>
       </section>
     </div>
