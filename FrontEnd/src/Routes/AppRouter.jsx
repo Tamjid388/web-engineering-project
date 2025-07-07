@@ -7,6 +7,7 @@ import { Demo } from '../Components/Demo/Demo'
 import { Login } from '../Auth/Login'
 import { Register } from '../Auth/Register'
 import { ProductDetails } from '../Pages/ProductDetail/ProductDetails'
+import { About } from '../Pages/About/About'
 
 
 
@@ -24,9 +25,14 @@ const AppRouter = createBrowserRouter([
          {
             path:'/shop',
             element:<Shop/>
-        },{
+        },
+        {
           path:"/shop/product-details/:id",
           element:<ProductDetails/>
+        },
+        {
+          path:"/about",
+          element:<About/>
         },
          {
             path:'/demo',

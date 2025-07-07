@@ -42,11 +42,11 @@ export const Shop = () => {
   console.log("filteredProducts", filteredProducts);
   return (
     <div className='mx-2 md:mx-0'>
-  <div className="flex gap-8 my-6
+  <div className="flex justify-between gap-8 my-6
   ">
     <h1 className='text-3xl font-bold'>Products</h1>
         <Select
-        className='w-full'
+        className='w-1/4'
         options={options}
         placeholder="Select Category"
         value={options.find(option => option.value === selectedCategory)}
