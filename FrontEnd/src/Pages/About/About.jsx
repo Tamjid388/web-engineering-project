@@ -1,25 +1,27 @@
 import React from 'react'
 import aboutImage from '../../assets/c1-3-1.jpg';
 import about from '../../assets/about/about .webp';
+import sabrin from '../../assets/profile/sabrin.jpeg';
+import tamjid from '../../assets/profile/tamjid.jpg';
 import { FaFacebook, FaGithub } from 'react-icons/fa';
 
 export const About = () => {
     const teamMembers = [
   {
     name: "Tamjid Ahmed",
-    image: "/assets/team/tamjid.jpg",
+    image: tamjid,
     facebook: "https://facebook.com/tamjid.ahmed",
     github: "https://github.com/tamjidahmed",
   },
   {
     name: "Adnan Rony",
-    image: "/assets/team/adnan.jpg",
+    image: tamjid,
     facebook: "https://facebook.com/adnan.rony",
     github: "https://github.com/adnanrony",
   },
   {
     name: "Sabrin Nahar",
-    image: "/assets/team/sabrin.jpg",
+    image: sabrin,
     facebook: "https://facebook.com/sabrin.nahar",
     github: "https://github.com/sabrinnahar",
   },
@@ -63,13 +65,13 @@ export const About = () => {
 <section className="my-16">
       <h2 className="text-3xl font-bold text-gray-800 text-center mb-8">Our Team
        </h2>
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
        { teamMembers.map((member,idx)=><div key={idx} className="card bg-gray-200  shadow-sm">
-  <figure className="px-10 pt-10">
+  <figure className="px-10 pt-10  h-[350px]">
     <img
-      src="https://images.unsplash.com/photo-1623582854588-d60de57fa33f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D"
+      src={member.image}
       alt="Shoes"
-      className="rounded-xl" />
+      className="rounded-xl h-full w-full " />
   </figure>
   <div className="card-body items-center text-center">
     <h2 className="card-title">{member.name}</h2>
