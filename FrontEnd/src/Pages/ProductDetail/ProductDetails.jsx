@@ -63,17 +63,19 @@ export const ProductDetails = () => {
 
 
           </div>
-          <div className="space-x-2 flex items-center">
+          <div className="space-x-2 flex flex-col md:flex-row items-center">
             <div className=" border-black flex items-center my-3">
+              <button onClick={decrease}
+                className="btn text-lg font-bold"
+              >-</button>
+               <p className="px-2">{count}</p>
               <button onClick={increase}
                 className="btn text-lg font-bold"
               >+</button>
 
-              <p className="px-2">{count}</p>
+            
 
-              <button onClick={decrease}
-                className="btn text-lg font-bold"
-              >-</button>
+             
             </div>
             <button className="btn  btn-outline w-full bg-black text-white">Add To Cart</button>
           </div>
@@ -82,7 +84,7 @@ export const ProductDetails = () => {
 
         </div>
       </div>
-      <DeliveryPolicy/>
+      <DeliveryPolicy product={product}/>
 
 
 

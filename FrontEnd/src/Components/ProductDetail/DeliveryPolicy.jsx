@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export const DeliveryPolicy = () => {
+export const DeliveryPolicy = ({product}) => {
   const [activeTab, setActiveTab] = useState("description");
 
   // Handle tab switching
@@ -41,20 +41,36 @@ export const DeliveryPolicy = () => {
       {/* Tab Content */}
       <div className="text-gray-700 text-sm">
         {activeTab === "description" && (
-          <div className="text-start">
-         <h1>Lorem ipsum dolor sit amet.</h1>
+          <div className="text-start text-lg">
+       <p>
+  Discover the perfect balance of quality and value with our
+   <span className="font-bold"> {product.name}</span>. Whether you're upgrading your daily essentials or searching for a thoughtful gift, this product delivers exceptional performance, style, and reliability.
+</p>
+<ul className="list-disc ml-5 mt-2 ">
+  <li>Premium quality materials and craftsmanship</li>
+  <li>Designed for convenience, functionality, and durability</li>
+  <li>Suitable for personal use or as a gift</li>
+  <li>Easy to use and maintain</li>
+</ul>
+<p className="mt-2">
+  Ideal for a wide range of uses, the {product.name} is a must-have addition to your collection. Experience satisfaction with every use.
+</p>
           </div>
         )}
 
         {activeTab === "delivery" && (
-          <div className="text-start">
-            Cdi
+          <div className="text-start text-lg">
+           {product.deliveryInfo?.freeShipping?
+          <p>Free Shipping Available For this product</p> :
+          <p>Shipping Charge Applicable</p>
+          }
           </div>
         )}
 
         {activeTab === "returns" && (
-          <div className="text-start">
-          return  Cdi
+          <div className="text-start text-lg">
+       <strong>Return Policy:</strong> 
+       {product.productDetails?.deliveryInfo?.returnPolicy}
           </div>
         )}
       </div>
