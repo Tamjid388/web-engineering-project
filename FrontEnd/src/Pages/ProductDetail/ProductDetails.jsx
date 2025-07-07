@@ -2,6 +2,8 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router"
 import { DeliveryPolicy } from "../../Components/ProductDetail/DeliveryPolicy";
+import { Reviews } from "../../Components/ProductDetail/Reviews.Jsx";
+
 
 
 export const ProductDetails = () => {
@@ -85,6 +87,7 @@ export const ProductDetails = () => {
         </div>
       </div>
       <DeliveryPolicy product={product}/>
+      <Reviews product={product.productDetails}/>
 
 
 
