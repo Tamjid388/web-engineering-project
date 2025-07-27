@@ -7,8 +7,8 @@ const Banner = () => {
 
 
   return (
-    <div>
-      <section className="w-full bg-[#eeedeb]  grid lg:grid-cols-2 grid-cols-1 mx-auto px-6 md:px-10 py-10 gap-10 items-center">
+    <div className="w-full bg-[#eeedeb]">
+      <section className="container   grid lg:grid-cols-2 grid-cols-1 mx-auto px-6 md:px-10 py-10 gap-10 items-center">
         {/* Text Section */}
         <div className="">
           <h1 className="text-5xl lg:text-7xl font-black text-slate-900 leading-tight">

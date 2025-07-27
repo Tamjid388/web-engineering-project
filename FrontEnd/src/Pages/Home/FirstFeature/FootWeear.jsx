@@ -17,7 +17,7 @@ const FootWeear = () => {
       });
   }, []);
   return (
-    <div className="my-10">
+    <div className="my-10 container mx-auto">
       <div className="uppercase text-center mb-8">
         <p className=" text-sm text-gray-500"> Find What is</p>
        

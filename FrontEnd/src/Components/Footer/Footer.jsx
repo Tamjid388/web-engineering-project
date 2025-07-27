@@ -1,32 +1,27 @@
-import React from 'react'
+import React from "react";
 
 export const Footer = () => {
   return (
-    <footer className=" container mx-auto  p-10
-    footer sm:footer-horizontal bg-base-300 text-base-content 
+   <div className="w-full bg-base-300 ">
+     <footer
+      className=" container mx-auto  p-10
+    footer sm:footer-horizontal bg-base-300  text-base-content 
     
-    flex flex-col md:flex-row justify-between">
+    flex flex-col md:flex-row justify-between"
+    >
       <aside>
-
-
-
         <h6 className="text-xl font-bold mb-2 ">FitFlex Online Store</h6>
 
-        <h5 className='footer-title'>
+        <h5 className="footer-title">
           Empowering your fitness journey since 2010
         </h5>
 
         <p className="">
-          House 45, Road 12, Uttara, Dhaka, Bangladesh<br />
-
-
+          House 45, Road 12, Uttara, Dhaka, Bangladesh
+          <br />
         </p>
-        <p>
-          Email: support@fitflex.com
-        </p>
-        <p>
-          Call: +880 1700 123456
-        </p>
+        <p>Email: support@fitflex.com</p>
+        <p>Call: +880 1700 123456</p>
       </aside>
       <nav>
         <h6 className="footer-title">Shop</h6>
@@ -56,6 +51,6 @@ export const Footer = () => {
         <a className="link link-hover">Privacy Policy</a>
       </nav>
     </footer>
-
-  )
-}
+   </div>
+  );
+};
