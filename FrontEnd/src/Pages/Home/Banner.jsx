@@ -34,10 +34,10 @@ const Banner = () => {
             </div>
 
           {/* buttons */}
-          <Link to={'/shop'}
-          className="btn md:btn-lg bg-red-500 text-white mt-2 md:mt-6
-            rounded-lg hover:bg-red-600 transition duration-300">
-            SHOP NOW
+          <Link to={'/shop'}>
+           <button className="border border-black text-black px-6 py-3 font-semibold hover:bg-black hover:text-white transition">
+            Shop Now
+          </button>
           </Link>
         </div>
 
