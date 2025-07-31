@@ -4,7 +4,6 @@ import { Authcontext } from "../../AuthProvider/Authprovider";
 import Swal from "sweetalert2";
 import { IoMdCart } from "react-icons/io";
 
-
 export const Navbar = () => {
   const { user, LogOut } = useContext(Authcontext)
   const username = user?.displayName;
