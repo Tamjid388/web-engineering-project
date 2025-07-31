@@ -1,44 +1,46 @@
 import React from 'react'
 import aboutImage from '../../assets/c1-3-1.jpg';
 import about from '../../assets/about/about .webp';
+import sabrin from '../../assets/profile/sabrin.jpeg';
+import tamjid from '../../assets/profile/tamjid.jpg';
+import saman from '../../assets/profile/saman.png';
+import rony from '../../assets/profile/rony.jpeg';
+import tiyash from '../../assets/profile/tiyash.jpg';
 import { FaFacebook, FaGithub } from 'react-icons/fa';
 
 export const About = () => {
-
   const teamMembers = [
     {
       name: "Tamjid Ahmed",
-      image: "/assets/team/tamjid.jpg",
-      facebook: "https://facebook.com/tamjid.ahmed",
+      image: tamjid,
+      facebook: "https://www.facebook.com/tamjid.razin/",
       github: "https://github.com/tamjidahmed",
     },
     {
       name: "Adnan Rony",
-      image: "/assets/team/adnan.jpg",
-      facebook: "https://facebook.com/adnan.rony",
-      github: "https://github.com/adnanrony",
+      image: rony,
+      facebook: "https://www.facebook.com/adnanrony19",
+      github: "https://github.com/Adnan-Rony",
     },
     {
       name: "Sabrin Nahar",
-      image: "/assets/team/sabrin.jpg",
-      facebook: "https://facebook.com/sabrin.nahar",
-      github: "https://github.com/sabrinnahar",
+      image: sabrin,
+      facebook: "https://www.facebook.com/sabrin.nahar.3572",
+      github: "https://github.com/SabrinJune",
     },
     {
       name: "Ataur Rahman",
-      image: "/assets/team/ataue.jpg",
-      facebook: "https://facebook.com/ataue.rahman",
-      github: "https://github.com/atauerahman",
+      image: saman,
+      facebook: "https://www.facebook.com/profile.php?id=100082755450923",
+      github: "https://github.com/Ataur-Rahman-Samnan",
     },
     {
       name: "Tanvir Imam",
-      image: "/assets/team/tanvir.jpg",
-      facebook: "https://facebook.com/tanvir.imam",
+      image: tiyash,
+      facebook: "https://www.facebook.com/tanvir.imam.tiyas",
       github: "https://github.com/tanvirimam",
     }
   ];
-
-
   return (
     <div>
       <section className="flex flex-col md:flex-row
@@ -61,39 +63,54 @@ export const About = () => {
             className="w-full rounded-lg shadow-md object-cover"
           />
         </div>
-
       </section>
 
-      <section className="my-15">
-        <h2 className="text-3xl font-bold text-gray-800 text-center mb-8">Our Team
+      <section className="my-16 px-4">
+        <h2 className="text-3xl font-bold text-gray-800 text-center mb-2">
+          Our Team
         </h2>
-
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {teamMembers.map((member, idx) =>
-            <div key={idx} className="card bg-gray-200  shadow-sm">
-              <div className="px-10 pt-10">
+        <p className="text-gray-600 text-center mb-12">
+          Meet the passionate minds behind FitFlex who drive our mission forward.
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+          {teamMembers.map((member, idx) => (
+            <div key={idx} className="bg-white shadow-md rounded-lg overflow-hidden">
+              <figure className="h-48 w-full border
+         border-gray-200 shadow-lg">
                 <img
-                  src="https://images.unsplash.com/photo-1623582854588-d60de57fa33f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D"
-                  alt="Shoes"
-                  className="rounded-xl" />
-              </div>
-              <div className="card-body items-center text-center">
-                <h2 className="card-title">{member.name}</h2>
-
-                <div className="card-actions text-3xl">
-                  <FaFacebook />
-                  <FaGithub />
+                  src={member.image}
+                  alt={member.name}
+                  className="h-full w-full object-cover 
+            transition duration-300 ease-in-out transform hover:scale-105"
+                />
+              </figure>
+              <div className="p-4 text-center">
+                <h3 className="text-lg font-semibold mb-2">{member.name}</h3>
+                <div className="flex justify-center gap-4 text-2xl
+           text-black">
+                  <a
+                    href={member.facebook}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-blue-600 transition"
+                  >
+                    <FaFacebook />
+                  </a>
+                  <a
+                    href={member.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-blue-600 transition"
+                  >
+                    <FaGithub />
+                  </a>
                 </div>
               </div>
             </div>
-          
-          )}
+          ))}
         </div>
-
-
-
       </section>
+
 
     </div>
   )
