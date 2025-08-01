@@ -1,4 +1,3 @@
-
 import { Link } from "react-router";
 import img from "../../assets/H6-rev-img-1-1.png";
 import { Shield, Truck } from "lucide-react";
@@ -10,7 +9,7 @@ const Banner = () => {
     <div>
       <section className="w-full bg-[#eeedeb]  grid lg:grid-cols-2 grid-cols-1 mx-auto px-6 md:px-10 py-10 gap-10 items-center">
         {/* Text Section */}
-        <div className="">
+        <div className="border border-blue-300 rounded-lg p-8">
           <h1 className="text-5xl lg:text-7xl font-black text-slate-900 leading-tight">
             DISCOVER YOUR <br />
             <span className="block bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600
@@ -22,16 +21,21 @@ const Banner = () => {
             Available for worldwide shipping and free delivery order.
           </p>
             {/* Features */}
-            <div className="flex flex-wrap gap-2 md:gap-6 text-sm text-slate-600 my-4 md:my-6">
-              <div className="flex items-center gap-2">
-                <Truck className="w-4 h-4 text-blue-600" />
-                <span>Free Worldwide Shipping</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Shield className="w-4 h-4 text-blue-600" />
-                <span>Quality Guarantee</span>
-              </div>
-            </div>
+         <div className="flex flex-wrap gap-2 md:gap-6 text-sm text-slate-600 my-4 md:my-6">
+          <div className="flex items-center gap-2 group hover:cursor-pointer">
+            <Truck className="w-4 h-4 text-blue-600" />
+            <span className="transition group-hover:text-blue-600">
+            Free Worldwide Shipping
+            </span>
+          </div>
+          <div className="flex items-center gap-2 group hover:cursor-pointer">
+           <Shield className="w-4 h-4 text-blue-600" />
+           <span className="transition group-hover:text-blue-600">
+             Quality Guarantee
+           </span>
+          </div>
+        </div>
+
 
           {/* buttons */}
           <Link to={'/shop'}
