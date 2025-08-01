@@ -24,15 +24,11 @@ export const Shop = () => {
         console.log(error);
       });
   }, []);
-
-
   const handleSelect = (selectedOption) => {
     setSelectedCategory(selectedOption ? selectedOption.value : null);
 
   }
-
-
-  useEffect(() => {
+ useEffect(() => {
     console.log("Updated category:", selectedCategory);
   }, [selectedCategory]);
 
