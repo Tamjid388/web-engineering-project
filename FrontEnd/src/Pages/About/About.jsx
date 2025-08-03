@@ -1,6 +1,6 @@
 
 import React from 'react'
-import aboutImage from '../../assets/c1-3-1.jpg';
+
 import about from '../../assets/about/about .webp';
 import sabrin from '../../assets/profile/sabrin.jpeg';
 import tamjid from '../../assets/profile/tamjid.jpg';
