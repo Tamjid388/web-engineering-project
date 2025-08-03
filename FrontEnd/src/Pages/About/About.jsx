@@ -1,3 +1,4 @@
+
 import React from 'react'
 import aboutImage from '../../assets/c1-3-1.jpg';
 import about from '../../assets/about/about .webp';
@@ -8,16 +9,20 @@ import rony from '../../assets/profile/rony.jpeg';
 import tiyash from '../../assets/profile/tiyash.jpg';
 import { FaFacebook, FaGithub } from 'react-icons/fa';
 
+
 export const About = () => {
   const teamMembers = [
     {
       name: "Tamjid Ahmed",
+
       image: tamjid,
       facebook: "https://www.facebook.com/tamjid.razin/",
+
       github: "https://github.com/tamjidahmed",
     },
     {
       name: "Adnan Rony",
+
       image: rony,
       facebook: "https://www.facebook.com/adnanrony19",
       github: "https://github.com/Adnan-Rony",
@@ -115,3 +120,4 @@ export const About = () => {
     </div>
   )
 }
+

@@ -9,8 +9,8 @@ const Brand = () => {
     <div className="my-10">
       <p className="text-center text-gray-500 font-semibold">BRANDS</p>
       <div className="grid grid-cols-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6   p-4">
-        <div className="border border-gray-300 hover:border-black ">
-          <img src={img6} alt="logo" />
+        <div className="border  border-gray-300 hover:border-black ">
+          <img  src={img6} alt="logo" />
         </div>
         <div className="border border-gray-300 hover:border-black">
           <img src={img1} alt="logo" />

@@ -18,7 +18,7 @@ export const BlogSection = () => {
   }, []);
 
   return (
-    <div className=" my-16">
+    <div className=" my-16 container mx-auto">
       <Sectiontitle
         title="From Fitness Tips to Style Trends"
         subtitle="Explore expert insights, workout routines, and gear guides to elevate your fitness journey with FitFlex."

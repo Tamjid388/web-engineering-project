@@ -3,8 +3,8 @@ import img from "../../../assets/6_cc9e926f-60c0-4686-b487-7035dbce10e8_480x480-
 
 const FeatureFour = () => {
   return (
-    <div>
-      <section className="flex flex-col lg:flex-row items-center justify-between px-8 lg:px-24  bg-[#f0f0f0]">
+    <div className="bg-[#f0f0f0] w-ful"> 
+      <section className="flex container mx-auto flex-col lg:flex-row items-center justify-between px-8 lg:px-24  ">
         {/* Left Image */}
         <div className="w-full  flex justify-center mb-10 lg:mb-0">
           <img
