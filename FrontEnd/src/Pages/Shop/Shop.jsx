@@ -27,10 +27,11 @@ export const Shop = () => {
 
   const handleSelect = (selectedOption) => {
     setSelectedCategory(selectedOption ? selectedOption.value : null);
-  };
 
-  useEffect(() => {
-    // console.log("Updated category:", selectedCategory);
+  }
+ useEffect(() => {
+    console.log("Updated category:", selectedCategory);
+
   }, [selectedCategory]);
 
   const filteredProducts = selectedCategory

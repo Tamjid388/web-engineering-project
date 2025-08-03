@@ -1,0 +1,85 @@
+<!-- <?php
+include("../db.php");
+
+// Read JSON file content
+// $json = file_get_contents('products.json');
+$products = json_decode($json, true);
+
+foreach ($products as $product) {
+    $id = $product['id'];
+    $name = mysqli_real_escape_string($conn, $product['name']);
+    $description = mysqli_real_escape_string($conn, $product['description']);
+    $price = $product['price'];
+    $discount = $product['discount'];
+    $category = mysqli_real_escape_string($conn, $product['category']);
+    $brand = mysqli_real_escape_string($conn, $product['brand']);
+    $stock = $product['stock'];
+    $rating = $product['rating'];
+    $image = mysqli_real_escape_string($conn, $product['image']);
+
+    // Insert into products table
+    $sql = "INSERT INTO products (id, name, description, price, discount, category, brand, stock, rating, image)
+            VALUES ('$id', '$name', '$description', $price, $discount, '$category', '$brand', $stock, $rating, '$image')";
+    mysqli_query($conn, $sql);
+
+    // Sizes
+    if (!empty($product['sizes'])) {
+        foreach ($product['sizes'] as $size) {
+            $size = mysqli_real_escape_string($conn, $size);
+            $sqlSize = "INSERT INTO product_sizes (product_id, size) VALUES ('$id', '$size')";
+            mysqli_query($conn, $sqlSize);
+        }
+    }
+
+    // Colors
+    if (!empty($product['colors'])) {
+        foreach ($product['colors'] as $color) {
+            $color = mysqli_real_escape_string($conn, $color);
+            $sqlColor = "INSERT INTO product_colors (product_id, color) VALUES ('$id', '$color')";
+            mysqli_query($conn, $sqlColor);
+        }
+    }
+
+    // Additional images
+    if (!empty($product['productDetails']['images'])) {
+        foreach ($product['productDetails']['images'] as $imgUrl) {
+            $imgUrl = mysqli_real_escape_string($conn, $imgUrl);
+            $sqlImg = "INSERT INTO product_images (product_id, image_url) VALUES ('$id', '$imgUrl')";
+            mysqli_query($conn, $sqlImg);
+        }
+    }
+
+    // Delivery info
+    if (!empty($product['productDetails']['deliveryInfo'])) {
+        $freeShipping = $product['productDetails']['deliveryInfo']['freeShipping'] ? 1 : 0;
+        $estimatedDelivery = mysqli_real_escape_string($conn, $product['productDetails']['deliveryInfo']['estimatedDelivery']);
+        $returnPolicy = mysqli_real_escape_string($conn, $product['productDetails']['deliveryInfo']['returnPolicy']);
+        $sqlDelivery = "INSERT INTO product_delivery_info (product_id, free_shipping, estimated_delivery, return_policy)
+                        VALUES ('$id', $freeShipping, '$estimatedDelivery', '$returnPolicy')";
+        mysqli_query($conn, $sqlDelivery);
+    }
+
+    // Reviews
+    if (!empty($product['productDetails']['reviews'])) {
+        foreach ($product['productDetails']['reviews'] as $review) {
+            $user = mysqli_real_escape_string($conn, $review['user']);
+            $rating = $review['rating'];
+            $comment = mysqli_real_escape_string($conn, $review['comment']);
+            $sqlReview = "INSERT INTO product_reviews (product_id, user, rating, comment)
+                          VALUES ('$id', '$user', $rating, '$comment')";
+            mysqli_query($conn, $sqlReview);
+        }
+    }
+
+    // Tags
+    if (!empty($product['tags'])) {
+        foreach ($product['tags'] as $tag) {
+            $tag = mysqli_real_escape_string($conn, $tag);
+            $sqlTag = "INSERT INTO product_tags (product_id, tag) VALUES ('$id', '$tag')";
+            mysqli_query($conn, $sqlTag);
+        }
+    }
+}
+
+echo "✅ All products inserted successfully!";
+?> -->

@@ -6,7 +6,7 @@ import img3 from "../../../assets/grayBagpack_hj7okz-removebg-preview.png";
 const FeatureFive = () => {
   const collections = [
     {
-      brand: "Nike",
+      brand: "Adidas",
       title: "Black Running Jacket",
       img: img2,
     },

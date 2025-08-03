@@ -1,2 +1,0 @@
-**Backend:** PHP  
-**Database:** MySQL
