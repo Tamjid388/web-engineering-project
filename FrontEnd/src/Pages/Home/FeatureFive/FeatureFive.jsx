@@ -23,14 +23,14 @@ const FeatureFive = () => {
   ];
 
   return (
-    <section className="w-full">
-      <div className="my-16 container mx-auto  text-center">
+    <section className=" container mx-auto">
+      <div className="  text-center">
         <p className="text-sm text-gray-500 uppercase tracking-widest mb-2">
           Explore Our World
         </p>
         <h2 className="text-4xl font-extrabold mb-12">New Collections</h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 ">
           {collections.map((item, index) => (
             <div
               key={index}

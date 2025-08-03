@@ -47,9 +47,9 @@ export const About = () => {
     }
   ];
   return (
-    <div>
+    <div className='container mx-auto'>
       <section className="flex flex-col md:flex-row
-       items-center  p-6 gap-16">
+       items-center  p-6 gap-16 ">
         {/* Left  */}
         <div className="md:w-1/2 text-center md:text-left space-y-8">
           <h2 className="text-3xl font-bold text-gray-800">Our Company

@@ -15,7 +15,7 @@ export const Shop = () => {
 
   useEffect(() => {
     axios
-      .get("/products.json")
+      .get("http://localhost/fitflex-backend/api/get_products.php")
       .then((res) => {
         setProducts(res.data);
         console.log(res.data);

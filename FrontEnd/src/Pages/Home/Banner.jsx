@@ -9,7 +9,7 @@ const Banner = () => {
       <section className="container grid lg:grid-cols-2 grid-cols-1 mx-auto px-6 md:px-10 py-10 gap-10 items-center">
         {/* Text Section */}
 
-        <div className="border border-blue-300 rounded-lg p-8">
+        <div className=" border-blue-300 rounded-lg p-8">
 
           <h1 className="text-5xl lg:text-7xl font-black text-slate-900 leading-tight">
             DISCOVER YOUR <br />
@@ -41,8 +41,7 @@ const Banner = () => {
 
           {/* buttons */}
           <Link to={'/shop'}
-          className="btn md:btn-lg bg-red-500 text-white mt-2 md:mt-6
-            rounded-lg hover:bg-red-600 transition duration-300">
+          className="border border-black text-black px-6 py-3 font-semibold hover:bg-black hover:text-white transition">
             SHOP NOW
 
           </Link>

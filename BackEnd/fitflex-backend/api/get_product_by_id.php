@@ -2,7 +2,7 @@
 include("../db.php");
 
 header("Content-Type: application/json");
-
+header("Access-Control-Allow-Origin: *");
 if (!isset($_GET['id'])) {
     echo json_encode(["error" => "Missing product ID"]);
     exit;
