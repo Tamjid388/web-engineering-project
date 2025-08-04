@@ -13,38 +13,47 @@ export const Register = () => {
   password: ""
 });
   
-  const handleSignUp=(email,password)=>{
- createUser(userdata.email,userdata.password)   
-.then((userCredential) => {
-    // Signed up 
-    const user = userCredential.user;
-    console.log(user);
-   
+ const handleSignUp = () => {
+  createUser(userdata.email, userdata.password)
+    .then(async (userCredential) => {
+      const user = userCredential.user;
+
+      
+      await fetch("http://localhost/fitflex-backend/api/add_user.php", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          username: user.displayName || "New User",
+          email: user.email,
+          uid: user.uid,  // optional 
+        }),
+      });
+
       Swal.fire({
         title: 'Registration Successful!',
         text: 'Welcome to FitFlex Sportswear',
         icon: 'success',
         iconColor: '#3b82f6',
-        confirmButtonColor: '#3b82f6'
+        confirmButtonColor: '#3b82f6',
       });
 
-      // ✅ Navigate to homepage
       navigate('/');
-  })
-  .catch((error) => {
-    const errorCode = error.code;
-    const errorMessage = error.message;
-
-        console.error("Signup error:", errorMessage,errorCode);
+    })
+    .catch((error) => {
       Swal.fire({
         title: 'Error!',
         text: error.message,
         icon: 'error',
-        confirmButtonColor: '#ef4444'
+        confirmButtonColor: '#ef4444',
       });
-    
-  });
-  }
+    });
+};
+
+
+
+
+
+
   return (
     <div className='container mx-auto my-16 flex gap-8  p-4  md:p-12 md:shadow-2xl '>
       {/* Left side: Login Form */}
