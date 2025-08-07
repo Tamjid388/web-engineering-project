@@ -70,51 +70,7 @@ export const About = () => {
         </div>
       </section>
 
-      <section className="my-16 px-4">
-        <h2 className="text-3xl font-bold text-gray-800 text-center mb-2">
-          Our Team
-        </h2>
-        <p className="text-gray-600 text-center mb-12">
-          Meet the passionate minds behind FitFlex who drive our mission forward.
-        </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-          {teamMembers.map((member, idx) => (
-            <div key={idx} className="bg-white shadow-md rounded-lg overflow-hidden">
-              <figure className="h-48 w-full border
-         border-gray-200 shadow-lg">
-                <img
-                  src={member.image}
-                  alt={member.name}
-                  className="h-full w-full object-cover 
-            transition duration-300 ease-in-out transform hover:scale-105"
-                />
-              </figure>
-              <div className="p-4 text-center">
-                <h3 className="text-lg font-semibold mb-2">{member.name}</h3>
-                <div className="flex justify-center gap-4 text-2xl
-           text-black">
-                  <a
-                    href={member.facebook}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-blue-600 transition"
-                  >
-                    <FaFacebook />
-                  </a>
-                  <a
-                    href={member.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-blue-600 transition"
-                  >
-                    <FaGithub />
-                  </a>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
+     
 
 
     </div>
