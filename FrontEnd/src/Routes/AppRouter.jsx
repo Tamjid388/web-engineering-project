@@ -8,6 +8,8 @@ import { Login } from '../Auth/Login'
 import { Register } from '../Auth/Register'
 import { ProductDetails } from '../Pages/ProductDetail/ProductDetails'
 import { About } from '../Pages/About/About'
+import DashboardLayout from '../MainLayout/DashboardLayout.jsx'
+import DashBoard from '../Components/dashboard/DashBoard.jsx'
 
 
 
@@ -41,6 +43,7 @@ const AppRouter = createBrowserRouter([
 
     ]
   },
+
   {
     path:'/login',
     element:<Login/>
@@ -48,7 +51,18 @@ const AppRouter = createBrowserRouter([
   {
     path:'/register',
     element:<Register/>
-  }
+  },
+
+    {
+    path:"/dashboard",
+    element:<DashboardLayout/>,
+    children:[
+      {
+        path:"",
+        element:<DashBoard/>
+      }
+    ]
+  },
 ])
 
 export default AppRouter
