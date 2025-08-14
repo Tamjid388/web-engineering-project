@@ -18,20 +18,26 @@ export const ProductDetails = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get("/products.json")
+      .get(`http://localhost/fitflex-backend/api/get_product_by_id.php?id=${id}`)
       .then((res) => {
-        const found = res.data.find((item) => item.id.toString() === id);
-        setProduct(found);
+        if (res.data.error) {
+          setProduct(null);
+        } else {
+          setProduct(res.data);
+        }
         setLoading(false);
       })
       .catch((err) => {
         console.error("Product fetch error:", err);
+        setProduct(null);
         setLoading(false);
       });
   }, [id]);
 
-  if (loading) return <h1 className="text-center text-2xl mt-10">Loading Product...</h1>;
-  if (!product) return <h1 className="text-center text-2xl mt-10">Product Not Found</h1>;
+  if (loading)
+    return <h1 className="text-center text-2xl mt-10">Loading Product...</h1>;
+  if (!product)
+    return <h1 className="text-center text-2xl mt-10">Product Not Found</h1>;
 
   return (
     <div className="container mx-auto px-4 py-12">
@@ -52,13 +58,20 @@ export const ProductDetails = () => {
           <p className="text-gray-600 text-lg">{product.description}</p>
 
           <div className="text-2xl font-semibold text-black">
-            ${product.price.toFixed(2)}
+            ${Number(product.price).toFixed(2)}
           </div>
 
           <div className="space-y-1 text-sm md:text-base text-gray-700">
-            <p><span className="font-semibold">Category:</span> {product.category}</p>
-            <p><span className="font-semibold">Brand:</span> {product.brand}</p>
-            <p><span className="font-semibold">Stock:</span> {product.stock > 0 ? product.stock : "Out of Stock"}</p>
+            <p>
+              <span className="font-semibold">Category:</span> {product.category}
+            </p>
+            <p>
+              <span className="font-semibold">Brand:</span> {product.brand}
+            </p>
+            <p>
+              <span className="font-semibold">Stock:</span>{" "}
+              {product.stock > 0 ? product.stock : "Out of Stock"}
+            </p>
           </div>
 
           {/* Quantity & Add to Cart */}

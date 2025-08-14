@@ -7,17 +7,18 @@ const FootWeear = () => {
 
   useEffect(() => {
     axios
-      .get("/products.json")
-      .then((res) => {
-        setProducts(res.data);
-        console.log(res.data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+  .get("http://localhost/fitflex-backend/api/get_products.php")
+  .then((res) => {
+    setProducts(res.data);
+    console.log(res.data);
+  })
+  .catch((error) => {
+    console.log("Error fetching products:", error);
+  });
+
   }, []);
   return (
-    <div className="my-10">
+    <div className="my-10 container mx-auto">
       <div className="uppercase text-center mb-8">
         <p className=" text-sm text-gray-500"> Find What is</p>
        
