@@ -10,7 +10,7 @@ export const BlogSection = () => {
       .get("/blogs.json")
       .then((res) => {
         setBlogs(res.data);
-        console.log(res.data);
+        
       })
       .catch((error) => {
         console.log(error);

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Products } from "./Products";
 import axios from "axios";
 import Select from "react-select";
+import Loading from "../../Components/Loaders/Loading";
 const options = [
   { value: "Clothing", label: "Clothing" },
   { value: "Footwear", label: "Footwear" },
@@ -18,19 +19,21 @@ export const Shop = () => {
       .get("http://localhost/fitflex-backend/api/get_products.php")
       .then((res) => {
         setProducts(res.data);
-        console.log(res.data);
+        
       })
       .catch((error) => {
         console.log(error);
       });
   }, []);
 
+
+console.log("Fetched from backend",products);
   const handleSelect = (selectedOption) => {
     setSelectedCategory(selectedOption ? selectedOption.value : null);
 
   }
  useEffect(() => {
-    console.log("Updated category:", selectedCategory);
+    
 
   }, [selectedCategory]);
 
@@ -38,6 +41,9 @@ export const Shop = () => {
     ? products.filter((product) => product.category === selectedCategory)
     : products;
   // console.log("filteredProducts", filteredProducts);
+
+
+    if(!products) return <Loading/>
   return (
     <div className="  container mx-auto">
       <div
@@ -53,7 +59,7 @@ export const Shop = () => {
           onChange={handleSelect}
         />
       </div>
-
+   {/* Showing All Items */}
       <Products products={filteredProducts} />
     </div>
   );

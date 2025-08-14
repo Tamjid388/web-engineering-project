@@ -22,16 +22,16 @@ export const Products = ({ products }) => {
                 alt="Shoes"
               />
               <div className="space-x-1 absolute bottom-[-40px] group-hover:bottom-2 transition-all duration-300">
-                <Link to={"/"}>
+             
                   <button className="btn bg-black text-white border-none">
                     <ShoppingCart />
                   </button>
-                </Link>
-                <Link to={"/"}>
+               
+            
                   <button className="btn bg-black text-white border-none">
                     <Heart />
                   </button>
-                </Link>
+               
               </div>
             </figure>
             <div className="card-body">
