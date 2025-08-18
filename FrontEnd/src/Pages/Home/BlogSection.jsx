@@ -1,6 +1,7 @@
 import axios from "axios";
 import{ useEffect, useState } from "react";
 import { Sectiontitle } from "../../Components/Sectiontitle/Sectiontitle";
+import { Link } from "react-router-dom";
 
 export const BlogSection = () => {
   const [blogs, setBlogs] = useState([]);
@@ -10,7 +11,8 @@ export const BlogSection = () => {
       .get("/blogs.json")
       .then((res) => {
         setBlogs(res.data);
-        
+
+
       })
       .catch((error) => {
         console.log(error);
@@ -18,29 +20,34 @@ export const BlogSection = () => {
   }, []);
 
   return (
-    <div className=" my-16 container mx-auto">
+    <div className="my-16 container mx-auto">
       <Sectiontitle
         title="From Fitness Tips to Style Trends"
-        subtitle="Explore expert insights, workout routines, and gear guides to elevate your fitness journey with FitFlex."
+        subtitle="Explore expert insights, workout routines, and gear guides to elevate your fitness journey with FitFlix."
       />
       <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
         {blogs?.map((blog) => (
           <div
             key={blog.id}
-            className="card bg-base-100 rounded-none  shadow-sm"
+            className="card bg-base-100 rounded-none shadow-sm"
           >
-            <figure className="">
+            <figure>
               <img
                 src={blog.image}
-                className="h-[300px] w-full object-cover  transition-transform duration-300 hover:scale-110"
-                alt="blog-contents"
+                className="h-[300px] w-full object-cover transition-transform duration-300 hover:scale-110"
+                alt={blog.title}
               />
             </figure>
             <div className="card-body">
               <h2 className="card-title">{blog.title}</h2>
-              <p>{blog.summary}</p>
+              <p>{blog.summary?.substring(0, 100)}...</p>
               <div className="card-actions justify-start">
-                <button className="btn btn-outline">Learn More</button>
+                <Link
+                  to={`/blogdetails/${blog.id}`}
+                  className="btn btn-outline"
+                >
+                  Learn More
+                </Link>
               </div>
             </div>
           </div>

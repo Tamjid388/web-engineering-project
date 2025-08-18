@@ -10,7 +10,11 @@ import { ProductDetails } from '../Pages/ProductDetail/ProductDetails'
 import { About } from '../Pages/About/About'
 import DashboardLayout from '../MainLayout/DashboardLayout.jsx'
 import DashBoard from '../Components/dashboard/DashBoard.jsx'
+
 import AllUser from '../Components/dashboard/MenuBar/AllUser.jsx'
+
+import BlogDetails from '../Pages/Home/BlogDeatils.jsx'
+
 
 
 
@@ -36,6 +40,10 @@ const AppRouter = createBrowserRouter([
         {
           path:"/about",
           element:<About/>
+        },
+        {
+          path:"/blogdetails/:id",
+          element:<BlogDetails/>
         },
          {
             path:'/demo',

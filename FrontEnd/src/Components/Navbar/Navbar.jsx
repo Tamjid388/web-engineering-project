@@ -3,7 +3,11 @@ import { NavLink, Link } from "react-router";
 import { Authcontext } from "../../AuthProvider/Authprovider";
 import Swal from "sweetalert2";
 import { IoMdCart } from "react-icons/io";
+
 import DropDown from "./DropDown";
+
+import CartDrawer from "../../Pages/card/AddToCart.jsx";
+
 
 export const Navbar = () => {
   const { user, LogOut } = useContext(Authcontext)
@@ -44,6 +48,8 @@ export const Navbar = () => {
       >
         Shop
       </NavLink>
+       
+      
       <NavLink
         to="/about"
         className={({ isActive }) =>
@@ -72,20 +78,7 @@ export const Navbar = () => {
         </NavLink>
       )}
       {user && (
-        <NavLink
-          to="/"
-          className={({ isActive }) =>
-            isActive ? 'text-primary font-semibold ' : 'text-gray-700 hover:text-primary'
-          }
-        >
-        <p className=" relative">
-           <IoMdCart className="text-xl md:text-2xl" />
-           <span className="bg-red-500
-           absolute bottom-2 left-4 w-fit px-2 rounded-full
-            text-white
-           ">0</span>
-        </p>
-        </NavLink>
+        <CartDrawer /> 
       )}
     </>
   );
