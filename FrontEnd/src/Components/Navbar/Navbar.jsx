@@ -13,6 +13,8 @@ export const Navbar = () => {
   const { user, LogOut } = useContext(Authcontext)
   const username = user?.displayName;
 
+  // Get user email for cart functionality
+  const userEmail = user?.email;
 
   const handleLogOut = () => {
     LogOut()
@@ -78,7 +80,7 @@ export const Navbar = () => {
         </NavLink>
       )}
       {user && (
-        <CartDrawer /> 
+        <CartDrawer userEmail={userEmail} /> 
       )}
     </>
   );

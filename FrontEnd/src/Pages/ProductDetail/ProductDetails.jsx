@@ -9,16 +9,23 @@ export const ProductDetails = () => {
   const [product, setProduct] = useState(null);
   const [loading, setLoading] = useState(true);
   const [count, setCount] = useState(1);
+  const [cartCount, setCartCount] = useState(0);
+  const [message, setMessage] = useState("");
+
+  const userEmail = "tamjid9asas0212@gmail.com"; // replace with logged-in user
 
   const increase = () => setCount((prev) => prev + 1);
   const decrease = () => {
     if (count > 1) setCount((prev) => prev - 1);
   };
 
+  // Fetch product by id
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`http://localhost/Web-Engineering-Project-Github/BackEnd/fitflex-backend/api/get_product_by_id.php?id=${id}`)
+      .get(
+        `http://localhost/Web-Engineering-Project-Github/BackEnd/fitflex-backend/api/get_product_by_id.php?id=${id}`
+      )
       .then((res) => {
         if (res.data.error) {
           setProduct(null);
@@ -33,6 +40,49 @@ export const ProductDetails = () => {
         setLoading(false);
       });
   }, [id]);
+
+  // Fetch cart count
+  useEffect(() => {
+    axios
+      .get(
+        `http://localhost/Web-Engineering-Project-Github/BackEnd/fitflex-backend/api/get_cart_count.php?user_email=${userEmail}`
+      )
+      .then((res) => {
+        if (res.data.status === "success") {
+          setCartCount(res.data.count);
+        }
+      })
+      .catch((err) => console.error("Cart count error:", err));
+  }, []);
+
+  // Add to Cart handler
+  const handleAddToCart = async () => {
+    if (!product) return;
+
+    try {
+      const res = await axios.post(
+        "http://localhost/Web-Engineering-Project-Github/BackEnd/fitflex-backend/api/add_to_cart.php",
+        {
+          user_email: userEmail,
+          product_id: product.id || product.product_id, // match your DB field
+          quantity: count,
+        }
+      );
+
+      if (res.data.status === "success") {
+        setMessage("✅ Added to Cart!");
+        // Update cart count
+        setCartCount((prev) => prev + count);
+      } else {
+        setMessage("⚠️ Failed to add to cart!");
+      }
+    } catch (err) {
+      console.error("Add to cart error:", err);
+      setMessage("❌ Error adding to cart!");
+    }
+
+    setTimeout(() => setMessage(""), 3000); // Clear message after 3s
+  };
 
   if (loading)
     return <h1 className="text-center text-2xl mt-10">Loading Product...</h1>;
@@ -92,10 +142,19 @@ export const ProductDetails = () => {
               </button>
             </div>
 
-            <button className="w-full md:w-auto px-6 py-3 bg-black text-white rounded-md hover:bg-gray-800 transition duration-300">
+            <button
+              onClick={handleAddToCart}
+              className="w-full md:w-auto px-6 py-3 bg-black text-white rounded-md hover:bg-gray-800 transition duration-300"
+            >
               Add To Cart
             </button>
           </div>
+
+          {/* Feedback & Cart Count */}
+          {message && <p className="mt-3 text-green-600">{message}</p>}
+          <p className="mt-1 text-gray-700">
+            🛒 Items in Cart: <span className="font-semibold">{cartCount}</span>
+          </p>
         </div>
       </div>
 
