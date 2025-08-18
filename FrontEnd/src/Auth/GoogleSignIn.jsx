@@ -24,7 +24,7 @@ export const GoogleSignIn = () => {
             body: JSON.stringify({
               username: user.displayName || 'Google User',
               email: user.email,
-              uid: user.uid,
+              role: 'customer',
             }),
           });
 

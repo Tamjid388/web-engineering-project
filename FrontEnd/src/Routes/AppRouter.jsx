@@ -12,6 +12,7 @@ import DashboardLayout from '../MainLayout/DashboardLayout.jsx'
 import DashBoard from '../Components/dashboard/DashBoard.jsx'
 
 import AllUser from '../Components/dashboard/MenuBar/AllUser.jsx'
+import { GetWishlist } from '../Components/dashboard/MenuBar/GetWishlist.jsx'
 
 import BlogDetails from '../Pages/Home/BlogDeatils.jsx'
 
@@ -70,6 +71,10 @@ const AppRouter = createBrowserRouter([
       {
         path:"allusers",
         element:<AllUser/>
+      },
+      {
+        path:"getwishlist",
+        element:<GetWishlist/>
       },
 
     ]
