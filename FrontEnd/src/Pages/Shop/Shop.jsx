@@ -13,21 +13,22 @@ const options = [
 export const Shop = () => {
   const [products, setProducts] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState(null);
-
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
     axios
-      .get("http://localhost/fitflex-backend/api/get_products.php")
+      .get("http://localhost/Web-Engineering-Project-Github/BackEnd/fitflex-backend/api/get_products.php")
       .then((res) => {
-        setProducts(res.data);
-        
+         setProducts(res.data);
+         setLoading(false);
       })
       .catch((error) => {
         console.log(error);
+         setLoading(false);
       });
   }, []);
 
 
-console.log("Fetched from backend",products);
+
   const handleSelect = (selectedOption) => {
     setSelectedCategory(selectedOption ? selectedOption.value : null);
 
@@ -43,9 +44,9 @@ console.log("Fetched from backend",products);
   // console.log("filteredProducts", filteredProducts);
 
 
-    if(!products) return <Loading/>
+
   return (
-    <div className="  container mx-auto">
+    <div className="container mx-auto">
       <div
         className="flex justify-between gap-8 my-6
   "
@@ -60,7 +61,11 @@ console.log("Fetched from backend",products);
         />
       </div>
    {/* Showing All Items */}
-      <Products products={filteredProducts} />
+      {loading ? (
+        <Loading />
+      ) : (
+        <Products products={filteredProducts} />
+      )}
     </div>
   );
 };
