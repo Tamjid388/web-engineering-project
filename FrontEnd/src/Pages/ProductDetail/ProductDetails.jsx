@@ -18,7 +18,7 @@ export const ProductDetails = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`http://localhost/fitflex-backend/api/get_product_by_id.php?id=${id}`)
+      .get(`http://localhost/Web-Engineering-Project-Github/BackEnd/fitflex-backend/api/get_product_by_id.php?id=${id}`)
       .then((res) => {
         if (res.data.error) {
           setProduct(null);

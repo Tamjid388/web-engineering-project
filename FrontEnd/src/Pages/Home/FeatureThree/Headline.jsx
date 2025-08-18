@@ -1,5 +1,5 @@
 import Marquee from "react-fast-marquee";
-import { Megaphone } from "lucide-react"; // Optional icon
+import { Megaphone } from "lucide-react";
 
 const Headline = () => {
   return (

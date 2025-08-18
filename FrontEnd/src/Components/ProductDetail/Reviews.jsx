@@ -20,7 +20,7 @@ export const Reviews = ({ product }) => {
       setLoading(true);
       try {
         const res = await axios.get(
-          `http://localhost/fitflex-backend/api/get_reviews.php?product_id=${product.id}`
+          `http://localhost/Web-Engineering-Project-Github/BackEnd/fitflex-backend/api/get_reviews.php?product_id=${product.id}`
         );
         if (res.data.status === "success") {
           const fetchedReviews = res.data.data || []; // Use 'data' as per backend
@@ -76,8 +76,8 @@ export const Reviews = ({ product }) => {
       };
 
       const endpoint = userReview
-        ? `http://localhost/fitflex-backend/api/update_review.php?id=${userReview.review_id}`
-        : "http://localhost/fitflex-backend/api/add_review.php";
+        ? `http://localhost/Web-Engineering-Project-Github/BackEnd/fitflex-backend/api/update_review.php?id=${userReview.review_id}`
+        : "http://localhost/Web-Engineering-Project-Github/BackEnd/fitflex-backend/api/add_review.php";
 
       const res = await axios.post(endpoint, reviewData);
 

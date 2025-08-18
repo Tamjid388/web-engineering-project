@@ -3,7 +3,11 @@ import { NavLink, Link } from "react-router";
 import { Authcontext } from "../../AuthProvider/Authprovider";
 import Swal from "sweetalert2";
 import { IoMdCart } from "react-icons/io";
+
+import DropDown from "./DropDown";
+
 import CartDrawer from "../../Pages/card/AddToCart.jsx";
+
 
 export const Navbar = () => {
   const { user, LogOut } = useContext(Authcontext)
@@ -81,7 +85,7 @@ export const Navbar = () => {
 
 
   return (
-    <div className="navbar bg-base-100 shadow-sm px-4">
+    <div className="navbar bg-base-100 shadow-sm container mx-auto">
       <div className="navbar-start">
         {/* Mobile Dropdown */}
         <div className="dropdown">
@@ -120,9 +124,10 @@ export const Navbar = () => {
             <button onClick={handleLogOut} className="btn btn-sm">
               Logout
             </button>
-            <span className="font-semibold hidden md:inline">
+            {/* <span className="font-semibold hidden md:inline">
               {username}
-            </span>
+            </span> */}
+            <DropDown username={username} />
           </>
         ) : (
           <Link to="/login">

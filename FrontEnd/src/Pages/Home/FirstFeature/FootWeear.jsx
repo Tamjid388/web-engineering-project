@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import ProductCard from "./ProductCard.jsx";
 
 const FootWeear = () => {
@@ -7,7 +7,7 @@ const FootWeear = () => {
 
   useEffect(() => {
     axios
-  .get("http://localhost/fitflex-backend/api/get_products.php")
+  .get("http://localhost/Web-Engineering-Project-Github/BackEnd/fitflex-backend/api/get_products.php")
   .then((res) => {
     setProducts(res.data);
     console.log(res.data);

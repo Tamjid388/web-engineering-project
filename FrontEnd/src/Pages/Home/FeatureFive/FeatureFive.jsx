@@ -7,7 +7,7 @@ const FeatureFive = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost/fitflex-backend/api/get_products.php")
+    fetch("http://localhost/Web-Engineering-Project-Github/BackEnd/fitflex-backend/api/get_products.php")
       .then((res) => res.json())
       .then((data) => {
         setCollections(data);

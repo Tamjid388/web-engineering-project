@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import{ useEffect, useState } from "react";
 import { Sectiontitle } from "../../Components/Sectiontitle/Sectiontitle";
 import { Link } from "react-router-dom";
 
@@ -11,6 +11,8 @@ export const BlogSection = () => {
       .get("/blogs.json")
       .then((res) => {
         setBlogs(res.data);
+
+
       })
       .catch((error) => {
         console.log(error);
