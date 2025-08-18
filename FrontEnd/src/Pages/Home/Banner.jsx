@@ -1,7 +1,8 @@
 
 import { Link } from "react-router";
 import img from "../../assets/H6-rev-img-1-1.png"; 
-import {  Shield, Truck } from "lucide-react";
+import {  Shield} from "lucide-react";
+import {  Truck } from "lucide-react";
 
 const Banner = () => {
   return (
@@ -52,6 +53,7 @@ const Banner = () => {
           <img
             src={img}
             alt="Sporty Shoes"
+            loading="lazy"
             className="relative z-10 w-3/4 md:w-2/3 lg:w-full h-auto object-contain animate-slow-rotate drop-shadow-lg"
           />
         </div>

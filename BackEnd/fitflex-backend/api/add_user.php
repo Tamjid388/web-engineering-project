@@ -1,8 +1,8 @@
 <?php
-header("Content-Type: application/json");
-header("Access-Control-Allow-Origin: *");
-header("Access-Control-Allow-Methods: POST");
-header("Access-Control-Allow-Headers: Content-Type");
+header("Access-Control-Allow-Origin: http://localhost:5173");
+header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
+header("Access-Control-Allow-Headers: Content-Type, Authorization");
+header("Access-Control-Allow-Credentials: true");
 
 require_once("../db.php");
 
@@ -16,7 +16,6 @@ if (!isset($data['username']) || !isset($data['email'])) {
 
 $username = $conn->real_escape_string($data['username']);
 $email = $conn->real_escape_string($data['email']);
-$uid = isset($data['uid']) ? $conn->real_escape_string($data['uid']) : null;
 $role = 'customer';
 
 // Check if email already exists
@@ -26,8 +25,8 @@ if ($check->num_rows > 0) {
     exit;
 }
 
-// Insert
-$sql = "INSERT INTO users (name, email, firebase_uid, role) VALUES ('$username', '$email', '$uid', '$role')";
+// Insert (without firebase_uid)
+$sql = "INSERT INTO users (name, email, role) VALUES ('$username', '$email', '$role')";
 
 if ($conn->query($sql) === TRUE) {
     echo json_encode(['status' => 'success', 'message' => 'User added successfully']);

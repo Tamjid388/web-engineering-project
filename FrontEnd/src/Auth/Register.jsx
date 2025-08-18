@@ -19,7 +19,7 @@ export const Register = () => {
       const user = userCredential.user;
 
       
-      await fetch("http://localhost/fitflex-backend/api/add_user.php", {
+      await fetch("http://localhost/Web-Engineering-Project-Github/BackEnd/fitflex-backend/api/add_user.php", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

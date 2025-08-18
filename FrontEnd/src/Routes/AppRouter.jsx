@@ -8,6 +8,14 @@ import { Login } from '../Auth/Login'
 import { Register } from '../Auth/Register'
 import { ProductDetails } from '../Pages/ProductDetail/ProductDetails'
 import { About } from '../Pages/About/About'
+import DashboardLayout from '../MainLayout/DashboardLayout.jsx'
+import DashBoard from '../Components/dashboard/DashBoard.jsx'
+
+import AllUser from '../Components/dashboard/MenuBar/AllUser.jsx'
+import { GetWishlist } from '../Components/dashboard/MenuBar/GetWishlist.jsx'
+
+import BlogDetails from '../Pages/Home/BlogDeatils.jsx'
+
 
 
 
@@ -34,6 +42,10 @@ const AppRouter = createBrowserRouter([
           path:"/about",
           element:<About/>
         },
+        {
+          path:"/blogdetails/:id",
+          element:<BlogDetails/>
+        },
          {
             path:'/demo',
             element:<Demo/>
@@ -41,6 +53,7 @@ const AppRouter = createBrowserRouter([
 
     ]
   },
+
   {
     path:'/login',
     element:<Login/>
@@ -48,7 +61,24 @@ const AppRouter = createBrowserRouter([
   {
     path:'/register',
     element:<Register/>
-  }
+  },
+
+    {
+    path:"/dashboard",
+    element:<DashBoard/>,
+    children:[
+     
+      {
+        path:"allusers",
+        element:<AllUser/>
+      },
+      {
+        path:"getwishlist",
+        element:<GetWishlist/>
+      },
+
+    ]
+  },
 ])
 
 export default AppRouter

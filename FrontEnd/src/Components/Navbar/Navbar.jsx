@@ -4,6 +4,11 @@ import { Authcontext } from "../../AuthProvider/Authprovider";
 import Swal from "sweetalert2";
 import { IoMdCart } from "react-icons/io";
 
+import DropDown from "./DropDown";
+
+import CartDrawer from "../../Pages/card/AddToCart.jsx";
+
+
 export const Navbar = () => {
   const { user, LogOut } = useContext(Authcontext)
   const username = user?.displayName;
@@ -43,6 +48,8 @@ export const Navbar = () => {
       >
         Shop
       </NavLink>
+       
+      
       <NavLink
         to="/about"
         className={({ isActive }) =>
@@ -71,27 +78,14 @@ export const Navbar = () => {
         </NavLink>
       )}
       {user && (
-        <NavLink
-          to="/"
-          className={({ isActive }) =>
-            isActive ? 'text-primary font-semibold ' : 'text-gray-700 hover:text-primary'
-          }
-        >
-        <p className=" relative">
-           <IoMdCart className="text-xl md:text-2xl" />
-           <span className="bg-red-500
-           absolute bottom-2 left-4 w-fit px-2 rounded-full
-            text-white
-           ">0</span>
-        </p>
-        </NavLink>
+        <CartDrawer /> 
       )}
     </>
   );
 
 
   return (
-    <div className="navbar bg-base-100 shadow-sm px-4">
+    <div className="navbar bg-base-100 shadow-sm container mx-auto">
       <div className="navbar-start">
         {/* Mobile Dropdown */}
         <div className="dropdown">
@@ -130,9 +124,10 @@ export const Navbar = () => {
             <button onClick={handleLogOut} className="btn btn-sm">
               Logout
             </button>
-            <span className="font-semibold hidden md:inline">
+            {/* <span className="font-semibold hidden md:inline">
               {username}
-            </span>
+            </span> */}
+            <DropDown username={username} />
           </>
         ) : (
           <Link to="/login">
