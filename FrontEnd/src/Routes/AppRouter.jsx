@@ -47,6 +47,10 @@ const AppRouter = createBrowserRouter([
           element:<BlogDetails/>
         },
          {
+        path:"getwishlist",
+        element:<GetWishlist/>
+      },
+         {
             path:'/demo',
             element:<Demo/>
         },
@@ -72,10 +76,7 @@ const AppRouter = createBrowserRouter([
         path:"allusers",
         element:<AllUser/>
       },
-      {
-        path:"getwishlist",
-        element:<GetWishlist/>
-      },
+     
 
     ]
   },

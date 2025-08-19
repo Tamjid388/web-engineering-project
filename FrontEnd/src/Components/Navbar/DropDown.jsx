@@ -18,7 +18,11 @@ opacity-80 border border-gray-400 hover:border-gray-200
     <li><Link to={'/dashboard/allusers'}>
     Dashboard
     </Link></li>
-    <li><a>Wishlist</a></li>
+    <li>
+      <Link to={'/getwishlist'}>
+      Wishlist
+      </Link>
+    </li>
    
   </ul>
 </div>
