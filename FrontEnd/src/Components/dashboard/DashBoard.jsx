@@ -31,7 +31,7 @@ const DashBoard = () => {
       ALL Users
       </Link></li>
       
-      <li><a>Sidebar Item 2</a></li>
+    
     </ul>
   </div>
 </div>

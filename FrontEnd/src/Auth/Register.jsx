@@ -10,7 +10,8 @@ export const Register = () => {
   const navigate=useNavigate()
   const [userdata,setUserdata]=useState({
   email: "",
-  password: ""
+  password: "",
+  name:""
 });
   
  const handleSignUp = () => {
@@ -25,7 +26,7 @@ export const Register = () => {
         body: JSON.stringify({
           username: user.displayName || "New User",
           email: user.email,
-          uid: user.uid,  // optional 
+          role:'customer'
         }),
       });
 
@@ -56,7 +57,7 @@ export const Register = () => {
 
   return (
     <div className='container mx-auto my-16 flex gap-8  p-4  md:p-12 md:shadow-2xl '>
-      {/* Left side: Login Form */}
+      {/* Left side: Register Form */}
       <div className="card bg-base-100 md:w-1/2 max-w-full shrink-0 border border-gray-100
        shadow-xl ">
         <div className="card-body flex flex-col   justify-center">
@@ -69,6 +70,16 @@ export const Register = () => {
   onChange={(e) => setUserdata({ ...userdata, email: e.target.value })}
             
              placeholder="Email" />
+
+             {/* Name */}
+            <label className="label">Name</label>
+            <input type="text"
+             className="input w-full "
+             value={userdata.name}
+  onChange={(e) => setUserdata({ ...userdata, name: e.target.value })}
+            
+             placeholder="Enter Your Name" />
+
             <label className="label">Password</label>
             <input type="password" 
             className="input w-full"

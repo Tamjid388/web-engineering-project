@@ -1,10 +1,14 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { DeliveryPolicy } from "../../Components/ProductDetail/DeliveryPolicy";
 import { Reviews } from "../../Components/ProductDetail/Reviews";
+import { Authcontext } from "../../AuthProvider/Authprovider";
+import Swal from "sweetalert2";
 
 export const ProductDetails = () => {
+    const { user } = useContext(Authcontext);
+     const userEmail = user?.email;
   const { id } = useParams();
   const [product, setProduct] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -33,6 +37,36 @@ export const ProductDetails = () => {
         setLoading(false);
       });
   }, [id]);
+
+
+  // Cart
+  const handleAddToCart = (productId) => {
+    if (!userEmail) {
+     Swal.fire("Please login to add items to your cart.");
+      return;
+    }
+
+    axios
+      .post(
+        "http://localhost/Web-Engineering-Project-Github/BackEnd/fitflex-backend/api/add_to_cart.php",
+        {
+          user_email: userEmail,
+          product_id: productId,
+          quantity: count,
+        }
+      )
+      .then((res) => {
+        if (res.data.status === "success") {
+          Swal.fire("Item added to cart!");
+        } else {
+          Swal.fire(res.data.message || "Failed to add to cart");
+        }
+      })
+      .catch((err) => {
+        console.error("Add to cart error:", err);
+        Swal.fire("Something went wrong!");
+      });
+  };
 
   if (loading)
     return <h1 className="text-center text-2xl mt-10">Loading Product...</h1>;
@@ -92,7 +126,9 @@ export const ProductDetails = () => {
               </button>
             </div>
 
-            <button className="w-full md:w-auto px-6 py-3 bg-black text-white rounded-md hover:bg-gray-800 transition duration-300">
+            <button
+              onClick={()=>handleAddToCart(product.id)}
+            className="w-full md:w-auto px-6 py-3 bg-black text-white rounded-md hover:bg-gray-800 transition duration-300">
               Add To Cart
             </button>
           </div>
